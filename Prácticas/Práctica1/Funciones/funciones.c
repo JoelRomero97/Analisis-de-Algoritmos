@@ -1,0 +1,209 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "../Arbol/Arbol.c"
+//#include "../MedirTiempo/tiempo.c"
+#include "funciones.h"
+
+int i, j, temp;																//Variables globales para manejar los ciclos y temporal
+double utime0, stime0, wtime0,utime1, stime1, wtime1;						//Variables para medir el tiempo
+
+void menu ()
+{
+	int n, algoritmo;
+	system ("clear");
+	printf("\nIngresa la cantidad de numeros a ordenar:\t");
+	scanf ("%d", &n);
+	printf("\n\nIngresa el algoritmo de ordenamiento deseado\n\n");
+	printf("1. Simple Bubble Sort\n");
+	printf("2. Optimized Bubble Sort\n");
+	printf("3. Insertion Sort\n");
+	printf("4. Selection Sort\n");
+	printf("5. Shell Sort\n");
+	printf("6. Binary Tree Sort\n\n");
+	scanf ("%d", &algoritmo);
+	seleccionarAlgoritmo (algoritmo, n);
+}
+
+void seleccionarAlgoritmo (int algoritmo, int n)
+{
+	system ("clear");
+	int * numeros = (int *) malloc (sizeof (int) * n);						//Creamos un arreglo dinámico de tamaño n para los numeros
+	numeros = leerArchivo (numeros, n);										//Obtenemos los n numeros en un arreglo dinamico
+	switch (algoritmo)
+	{
+		case 1:
+			BurbujaSimple (numeros, n);										//Ordenamos los numeros con el primer algoritmo
+			break;
+		case 2:
+			BurbujaOptimizada (numeros, n);									//Ordenamos los numeros con el segundo algoritmo
+			break;
+		case 3:
+			Insercion (numeros, n);											//Ordenamos los numeros con el tercer algoritmo
+			break;
+		case 4:
+			Seleccion (numeros, n);											//Ordenamos los numeros con el cuarto algoritmo
+			break;
+		case 5:
+			Shell (numeros, n);												//Ordenamos los numeros con el quinto algoritmo
+			break;
+		case 6:
+			ArbolBinario (numeros, n);										//Ordenamos los numeros con el sexto algoritmo
+			break;
+		default:
+			printf("Opción invalida.\n\n");
+			exit (0);
+	}
+}
+
+int * leerArchivo (int * numeros, int n)
+{
+	FILE * archivo;
+	archivo = fopen ("numeros.txt", "r");									//Abrimos el archivo de numeros para lectura
+	if (archivo == NULL)
+		printf("Error al abrir el archivo.\n\n\n");
+	else
+		printf("Archivo abierto correctamente.\n\n\n");
+	for (i = 0; i < n; i ++)
+		fscanf (archivo, "%d", &numeros [i]);								//Guardamos los n numeros en un arreglo dinamico
+	numeros [i] = '\0';
+	return numeros;
+}
+
+void BurbujaSimple (int * numeros, int n)
+{
+	//uswtime(&utime0, &stime0, &wtime0);									//Comenzamos a tomar el tiempo del algoritmo
+	for (i = 1; i < n; i ++)
+		for (j = 0; j < (n - 1); j ++)
+		{
+			if (numeros [j] > numeros [j + 1])
+			{
+				temp = numeros [j];
+				numeros [j] = numeros [j + 1];
+				numeros [j + 1] = temp;
+			}
+		}
+	//uswtime(&utime1, &stime1, &wtime1);									//Terminamos de tomar el tiempo del algoritmo
+	//calculaTiempo (utime0, stime0, wtime0, utime1, stime1, wtime1, n, 1);	//Calculamos el tiempo del algoritmo y lo mostramos
+	numerosOrdenados (numeros, n);											//Mostramos los numeros ordenados por el algoritmo
+}
+
+void BurbujaOptimizada (int * numeros, int n)
+{
+	char cambios [2] = "si";
+	//uswtime(&utime0, &stime0, &wtime0);									//Comenzamos a tomar el tiempo del algoritmo
+	for (i = 1; ((i < n) && strcmp (cambios, "si") == 0); i ++)
+		for (j = 0; j < n; j ++)
+		{
+			if (numeros [i] < numeros [j])
+			{
+				temp = numeros [j];
+				numeros [j] = numeros [i];
+				numeros [i] = temp;
+				strcpy (cambios, "si");
+			}
+		}
+	//uswtime(&utime1, &stime1, &wtime1);									//Terminamos de tomar el tiempo del algoritmo
+	//calculaTiempo (utime0, stime0, wtime0, utime1, stime1, wtime1, n, 2);	//Calculamos el tiempo del algoritmo y lo mostramos
+	numerosOrdenados (numeros, n);											//Mostramos los numeros ordenados por el algoritmo
+}
+
+void Insercion (int * numeros, int n)
+{
+	//uswtime(&utime0, &stime0, &wtime0);									//Comenzamos a tomar el tiempo del algoritmo
+	for (i = 1; i < n; i ++)
+	{
+		temp = numeros [i];
+		j = i - 1;
+		while ((numeros [j] > temp) && (j >= 0))
+		{
+			numeros [j + 1] = numeros [j];
+			j --;
+		}
+		numeros [j + 1] = temp;
+	}
+	//uswtime(&utime1, &stime1, &wtime1);									//Terminamos de tomar el tiempo del algoritmo
+	//calculaTiempo (utime0, stime0, wtime0, utime1, stime1, wtime1, n, 3);	//Calculamos el tiempo del algoritmo y lo mostramos
+	numerosOrdenados (numeros, n);											//Mostramos los numeros ordenados por el algoritmo
+}
+
+void Seleccion (int * numeros, int n)
+{
+	int p;
+	//uswtime(&utime0, &stime0, &wtime0);									//Comenzamos a tomar el tiempo del algoritmo
+	for (i = 0; i < (n - 1); i ++)
+	{
+		p = i;
+		for (j = i + 1; j > (n - 1); j ++)
+		{
+			if (numeros [j] < numeros [p])
+				p = j;
+		}
+		if (p != i)
+		{
+			temp = numeros [p];
+			numeros [p] = numeros [i];
+			numeros [i] = temp;
+		}
+	}
+	//uswtime(&utime1, &stime1, &wtime1);									//Terminamos de tomar el tiempo del algoritmo
+	//calculaTiempo (utime0, stime0, wtime0, utime1, stime1, wtime1, n, 4);	//Calculamos el tiempo del algoritmo y lo mostramos
+	numerosOrdenados (numeros, n);											//Mostramos los numeros ordenados por el algoritmo
+}
+
+void Shell (int * numeros, int n)
+{
+	//
+}
+
+void ArbolBinario (int * numeros, int n)
+{
+	//
+}
+
+void calculaTiempo (double utime0, double stime0, double wtime0, double utime1, double stime1, double wtime1, int n, int algoritmo)
+{
+	char * algorithm = (char *) malloc (sizeof (char));
+	switch (algoritmo)
+	{
+		case 1:
+			strcpy (algorithm, "Simple Bubble Sort");
+			break;
+		case 2:
+			strcpy (algorithm, "Optimized Bubble Sort");
+			break;
+		case 3:
+			strcpy (algorithm, "Insertion Sort");
+			break;
+		case 4:
+			strcpy (algorithm, "Selection Sort");
+			break;
+		case 5:
+			strcpy (algorithm, "Shell Sort");
+			break;
+		case 6:
+			strcpy (algorithm, "Binary Tree Sort");
+			break;
+	}
+	printf("Time with %s algorithm with n = %d\n", algorithm, n);
+	printf("\n\n");
+	printf("Tiempo total:  %.10f s\n",  wtime1 - wtime0);
+	printf("Tiempo de procesamiento en CPU: %.10f s\n",  utime1 - utime0);
+	printf("Tiempo en acciónes de E/S:  %.10f s\n",  stime1 - stime0);
+	printf("CPU/Wall:   %.10f %% \n",100.0 * (utime1 - utime0 + stime1 - stime0) / (wtime1 - wtime0));
+	printf("\n\n");
+	
+	//Mostrar los tiempos en formato exponecial
+	printf("\n\n");
+	printf("Tiempo total:  %.10e s\n",  wtime1 - wtime0);
+	printf("Tiempo de procesamiento en CPU: %.10e s\n",  utime1 - utime0);
+	printf("Tiempo en acciónes de E/S:  %.10e s\n",  stime1 - stime0);
+	printf("CPU/Wall:   %.10f %% \n",100.0 * (utime1 - utime0 + stime1 - stime0) / (wtime1 - wtime0));
+	printf("\n\n");
+}
+
+void numerosOrdenados (int * numeros, int n)
+{
+	for (i = 0; i < n; i ++)
+		printf("%d\n", numeros [i]);
+}

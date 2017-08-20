@@ -1,0 +1,11 @@
+void menu ();
+void seleccionarAlgoritmo (int algoritmo, int n);
+int * leerArchivo (int * numeros, int n);
+void BurbujaSimple (int * numeros, int n);
+void BurbujaOptimizada (int * numeros, int n);
+void Insercion (int * numeros, int n);
+void Seleccion (int * numeros, int n);
+void Shell (int * numeros, int n);
+void ArbolBinario (int * numeros, int n);
+void calculaTiempo (double utime0, double stime0, double wtime0, double utime1, double stime1, double wtime1, int n, int algoritmo);
+void numerosOrdenados (int * numeros, int n);
