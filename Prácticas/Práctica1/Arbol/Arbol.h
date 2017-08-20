@@ -161,7 +161,7 @@ Efecto: Recibe un árbol binario A y una posición P, realiza el recorrido raíz
 Requerimientos: El árbol binario A es no vacío y la posición P es una posición valida.
 */
 
-void Inorden (arbolBinario * a, posicion p, int * numeros);
+void Inorden (arbolBinario * a, posicion p);
 /*
 recibe<-árbol(A), posición (P);
 Inorden (A,P)

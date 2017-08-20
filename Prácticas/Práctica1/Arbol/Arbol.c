@@ -367,16 +367,16 @@ Inorden (A,P)
 Efecto: Recibe un árbol binario A y una posición P, realiza el recorrido izquierdo -> raiz -> derecho a partir de la posicion P.
 Requerimientos: El árbol binario A es no vacío y la posición P es una posición valida.
 */
-void Inorden (arbolBinario * a, posicion p, int * numeros)
+void Inorden (arbolBinario * a, posicion p)
 {
 	elemento e;
 	int i = 0;
 	if (!PosicionNula (a, p))
 	{
-		Inorden (a, HijoIzquierdo (a, p), numeros);
+		Inorden (a, HijoIzquierdo (a, p));
 		e = BuscaElemento (a, p);
 		printf("%d\n", e.numero);
-		Inorden (a, HijoDerecho (a, p), numeros);
+		Inorden (a, HijoDerecho (a, p));
 	}
 	return;
 }

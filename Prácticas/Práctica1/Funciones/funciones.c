@@ -190,7 +190,7 @@ void ArbolBinario (int * numeros, int n)
 	free (numeros);
 	//uswtime(&utime0, &stime0, &wtime0);									//Comenzamos a tomar el tiempo del algoritmo
 	pos = Raiz (&arbol);
-	Inorden (&arbol, pos, numeros);											//Ordenamos y mostramos los numeros ordenados por el algoritmo
+	Inorden (&arbol, pos);													//Ordenamos y mostramos los numeros ordenados por el algoritmo
 	//uswtime(&utime1, &stime1, &wtime1);									//Terminamos de tomar el tiempo del algoritmo
 	//calculaTiempo (utime0, stime0, wtime0, utime1, stime1, wtime1, n, 5);	//Calculamos el tiempo del algoritmo y lo mostramos
 }
