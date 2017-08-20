@@ -7,27 +7,27 @@ ABRIL 2017
 
 
 /*recibe<-árbol(A); 
-Initialize (A)
+InicializarArbol (A)
 Efecto: Recibe un árbol binario A y lo inicializa para su trabajo normal.
 */
-void Initialize(arbol_bin *A){
+void InicializarArbol (arbolBinario *A){
 	*A = NULL;
 	return;
 }
 
 /*recibe<-árbol(A); 
-Destroy (A)
+Elimina (A)
 Efecto: Recibe un árbol binario A y lo libera completamente.
 */
-void Destroy(arbol_bin *A){
+void Elimina (arbolBinario *A){
 	if(*A == NULL)
 		return;
 	else
 	{
-		if((*A)->izq != NULL)
-			Destroy(&((*A)->izq));
+		if((*A) -> izq != NULL)
+			Elimina(&((*A) -> izq));
 		if((*A)->der != NULL)
-			Destroy(&((*A)->der));
+			Elimina(&((*A) -> der));
 		free(*A);
 		return;
 	}
@@ -37,7 +37,7 @@ void Destroy(arbol_bin *A){
 Root (A)
 Efecto: Recibe un árbol binario A y retorna la posición de la raíz de A, si el árbol es vacío devuelve una posición nula.
 */
-posicion Root(arbol_bin *A){
+posicion Root(arbolBinario *A){
 	return *A;
 }
 
@@ -47,7 +47,7 @@ Parent(A,P)
 Efecto: Recibe un árbol binario  A y una posición P, devuelve la posición de padre de p. 
 Requerimientos: El árbol binario A es no vacío y la posición P es una posición valida. Si P es la raíz se devuelve una posición nula.
 */
-posicion Parent(arbol_bin *A, posicion p){
+posicion Parent(arbolBinario *A, posicion p){
 	posicion r = NULL;
 	if(*A == NULL || *A == p)
 		return NULL;
@@ -67,7 +67,7 @@ RightSon(A,P)
 Efecto: Recibe un árbol binario A y una posición P, devuelve la posición del hijo derecho de p. 
 Requerimientos: El árbol binario A es no vacío y la posición P es una posición valida. Si P no tiene hijo derecho devuelve una posición nula.
 */
-posicion RightSon(arbol_bin *A, posicion P)
+posicion RightSon(arbolBinario *A, posicion P)
 {
 	posicion r = NULL;
 	if(!NullNode(A, P))
@@ -80,7 +80,7 @@ LeftSon(A,P)
 Efecto: Recibe un árbol binario A y una posición P, devuelve la posición del hijo izquierdo de p. 
 Requerimientos: El árbol A es no vacío y la posición P es una posición valida. Si P no tiene hijo izquierdo devuelve una posición nula.
 */
-posicion LeftSon(arbol_bin *A, posicion P)
+posicion LeftSon(arbolBinario *A, posicion P)
 {
 	posicion r = NULL;
 	if(!NullNode(A, P))
@@ -95,7 +95,7 @@ Search(A,E)
 Efecto: Recibe un árbol binario A y un elemento E, devuelve la posición del elemento E en el árbol  A.
 Requerimientos: El árbol binario A es no vacío y la posición P es una posición valida. Si E no es encontrado devuelve una posición nula.
 */
-posicion Search(arbol_bin *A, elemento e)
+posicion Search(arbolBinario *A, elemento e)
 {
 	
 	posicion r = NULL;
@@ -117,7 +117,7 @@ posicion Search(arbol_bin *A, elemento e)
 Empty(A)
 Efecto: Recibe un árbol binario A y devuelve verdadero en caso de que el árbol A este vacío, devuelve falso en caso contrario.
 */
-boolean Empty(arbol_bin *A)
+boolean Empty(arbolBinario *A)
 {
 	boolean r;
 	if(*A == NULL)
@@ -132,7 +132,7 @@ boolean Empty(arbol_bin *A)
 NullNode(A,P)
 Efecto: Recibe un árbol binario A y una posición P, devuelve verdadero si la posición P del árbol A es nula o incorrecta y devuelve falso en caso contrario.
 */
-boolean NullNode(arbol_bin *A, posicion p)
+boolean NullNode(arbolBinario *A, posicion p)
 {
 	boolean r;
 	if(*A == NULL)
@@ -154,7 +154,7 @@ ReadNode(A,P)
 Efecto: Recibe un árbol binario A y una posición P, devuelve el elemento en la posición P del árbol A.
 Requerimientos: El árbol A es no vacío y la posición P es una posición valida..
 */
-elemento ReadNode(arbol_bin *A, posicion p)
+elemento ReadNode(arbolBinario *A, posicion p)
 {
 	elemento r;
 	
@@ -175,7 +175,7 @@ NewRightSon(A,P,E)
 Efecto: Recibe un árbol binario A, una posición P y un elemento E, se añade un nodo que contenga E como hijo derecho del nodo con posición P.
 Requerimientos: El árbol binario A es no vacío y la posición P es una posición valida. Si el árbol A es vacío se agrega a un nodo raíz con E. si P ya tiene un hijo derecho, se cancela la operación.
 */
-void NewRightSon(arbol_bin *A, posicion p, elemento e)
+void NewRightSon(arbolBinario *A, posicion p, elemento e)
 {
 	if(Empty(A))
 	{
@@ -209,7 +209,7 @@ NewLeftSon(A,P,E)
 Efecto: Recibe un árbol binario A, una posición P y un elemento E, se añade un nodo que contenga E como hijo izquierdo del nodo con posición P.
 Requerimientos: El árbol binario A es no vacío y la posición P es una posición valida. Si el árbol A es vacío se agrega a un nodo raíz con E; si P ya tiene un hijo Izquierdo, se cancela la operación.
 */
-void NewLeftSon(arbol_bin *A, posicion p, elemento e)
+void NewLeftSon(arbolBinario *A, posicion p, elemento e)
 {
 	if(Empty(A))
 	{
@@ -243,11 +243,11 @@ DeleteRightSon(A,P)
 Efecto: Recibe un árbol binario A y una posición se elimina al hijo derecho y todos sus descendientes del nodo con posición P.
 Requerimientos: El árbol A es no vacío y la posición P es una posición valida y tiene un hijo derecho.
 */
-void DeleteRightSon(arbol_bin *A, posicion p)
+void DeleteRightSon(arbolBinario *A, posicion p)
 {
 	if(!NullNode(A, p))
 	{
-		Destroy(&(p->der));
+		Elimina(&(p->der));
 	}
 	else
 	{
@@ -262,11 +262,11 @@ DeleteLeftSon(A,P)
 Efecto: Recibe un árbol binario A y una posición se elimina al hijo izquierdo y todos sus descendientes del nodo con posición P.
 Requerimientos: El árbol A es no vacío y la posición P es una posición valida y tiene un hijo izquierdo.
 */
-void DeleteLeftSon(arbol_bin *A, posicion p)
+void DeleteLeftSon(arbolBinario *A, posicion p)
 {
 	if(!NullNode(A, p))
 	{
-	Destroy(&(p->izq));
+	Elimina(&(p->izq));
 	}
 	else
 	{
@@ -282,11 +282,11 @@ DeleteNode(A,P)
 Efecto: Recibe un árbol binario A y una posición P, se elimina al nodo con posición  P  y todos sus descendientes.
 Requerimientos: El árbol A es no vacío y la posición P es una posición valida. 
 */
-void DeleteNode(arbol_bin *A, posicion p)
+void DeleteNode(arbolBinario *A, posicion p)
 {
 	if(!NullNode(A, p))
 	{
-		Destroy(&p);
+		Elimina(&p);
 	}
 	else
 	{
@@ -301,7 +301,7 @@ ReplaceNode(A,P)
 Efecto: Recibe un árbol binario A, una posición P y un elemento E, se remplaza a E del nodo con posición P en A.
 Requerimientos: El árbol binario A es no vacío y la posición P es una posición valida. 
 */
-void ReplaceNode(arbol_bin *A, posicion p, elemento e)
+void ReplaceNode(arbolBinario *A, posicion p, elemento e)
 {
 	if(!NullNode(A, p))
 	{
@@ -312,6 +312,6 @@ void ReplaceNode(arbol_bin *A, posicion p, elemento e)
 		printf("Error: ReplaceNode");
 		exit(1);
 	}
-	return; 
+	return;
 }
 

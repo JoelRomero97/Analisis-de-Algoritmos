@@ -67,6 +67,7 @@ int * leerArchivo (int * numeros, int n)
 	for (i = 0; i < n; i ++)
 		fscanf (archivo, "%d", &numeros [i]);								//Guardamos los n numeros en un arreglo dinamico
 	numeros [i] = '\0';
+	fclose (archivo);
 	return numeros;
 }
 
@@ -177,7 +178,11 @@ void Shell (int * numeros, int n)
 
 void ArbolBinario (int * numeros, int n)
 {
+	//uswtime(&utime0, &stime0, &wtime0);									//Comenzamos a tomar el tiempo del algoritmo
 	//
+	//uswtime(&utime1, &stime1, &wtime1);									//Terminamos de tomar el tiempo del algoritmo
+	//calculaTiempo (utime0, stime0, wtime0, utime1, stime1, wtime1, n, 5);	//Calculamos el tiempo del algoritmo y lo mostramos
+	numerosOrdenados (numeros, n);											//Mostramos los numeros ordenados por el algoritmo
 }
 
 void calculaTiempo (double utime0, double stime0, double wtime0, double utime1, double stime1, double wtime1, int n, int algoritmo)
@@ -224,5 +229,5 @@ void calculaTiempo (double utime0, double stime0, double wtime0, double utime1, 
 void numerosOrdenados (int * numeros, int n)
 {
 	for (i = 0; i < n; i ++)
-		printf("%d\n", numeros [i]);
+		printf("%d\n", numeros [i]);										//Imprimimos el arreglo de numeros
 }
