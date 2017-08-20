@@ -61,9 +61,9 @@ int * leerArchivo (int * numeros, int n)
 	FILE * archivo;
 	archivo = fopen ("numeros.txt", "r");									//Abrimos el archivo de numeros para lectura
 	if (archivo == NULL)
-		printf("Error al abrir el archivo.\n\n\n");
+		printf("Error al abrir el archivo con los numeros desordenados .\n\n\n");
 	else
-		printf("Archivo abierto correctamente.\n\n\n");
+		printf("Archivo con los numeros desordenados abierto correctamente.\n\n\n");
 	for (i = 0; i < n; i ++)
 		fscanf (archivo, "%d", &numeros [i]);								//Guardamos los n numeros en un arreglo dinamico
 	numeros [i] = '\0';
@@ -187,6 +187,7 @@ void ArbolBinario (int * numeros, int n)
 		e.numero = numeros [i];												//Guardamos cada numero en el elemento 'numero' del nodo
 		InsertarABB (&arbol, e);											//Insertamos los numeros en el arbol
 	}
+	free (numeros);
 	//uswtime(&utime0, &stime0, &wtime0);									//Comenzamos a tomar el tiempo del algoritmo
 	pos = Raiz (&arbol);
 	Inorden (&arbol, pos, numeros);											//Ordenamos y mostramos los numeros ordenados por el algoritmo
@@ -237,6 +238,14 @@ void calculaTiempo (double utime0, double stime0, double wtime0, double utime1, 
 
 void numerosOrdenados (int * numeros, int n)
 {
+	FILE * archivoOrdenado;
+	archivoOrdenado = fopen ("numerosOrdenados.txt", "w");
+	if (archivoOrdenado == NULL)
+		printf("Error al crear el archivo con los %d numeros ordenados \n", n);
+	else
+		printf("Archivo creado  con los %d numeros ordenados correctamente\n", n);
 	for (i = 0; i < n; i ++)
-		printf("%d\n", numeros [i]);										//Imprimimos el arreglo de numeros
+		fprintf(archivoOrdenado, "%d\n", numeros [i]);						//Imprimimos el arreglo de numeros
+	free (numeros);
+	fclose (archivoOrdenado);
 }
