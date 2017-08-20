@@ -134,7 +134,7 @@ void Seleccion (int * numeros, int n)
 	for (i = 0; i < (n - 1); i ++)
 	{
 		p = i;
-		for (j = i + 1; j > (n - 1); j ++)
+		for (j = i + 1; j <= (n - 1); j ++)
 		{
 			if (numeros [j] < numeros [p])
 				p = j;
@@ -153,7 +153,26 @@ void Seleccion (int * numeros, int n)
 
 void Shell (int * numeros, int n)
 {
-	//
+	int k = n / 2;
+	//uswtime(&utime0, &stime0, &wtime0);									//Comenzamos a tomar el tiempo del algoritmo
+	while (k > 0)
+	{
+		for (i = k; i < n; i ++)
+		{
+			temp = numeros [i];
+			j = i - k;
+			while (j >= 0 && numeros [j] > temp)
+			{
+				numeros [j + k] = numeros [j];
+				j -= k;
+			}
+			numeros [j + k] = temp;
+		}
+		k /= 2;
+	}
+	//uswtime(&utime1, &stime1, &wtime1);									//Terminamos de tomar el tiempo del algoritmo
+	//calculaTiempo (utime0, stime0, wtime0, utime1, stime1, wtime1, n, 5);	//Calculamos el tiempo del algoritmo y lo mostramos
+	numerosOrdenados (numeros, n);											//Mostramos los numeros ordenados por el algoritmo
 }
 
 void ArbolBinario (int * numeros, int n)
