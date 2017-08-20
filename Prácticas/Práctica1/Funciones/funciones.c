@@ -14,6 +14,15 @@ void menu ()
 	system ("clear");
 	printf("\nIngresa la cantidad de numeros a ordenar:\t");
 	scanf ("%d", &n);
+	if (n <= 0)
+	{
+		printf("Error, la cantidad de numeros debe ser mayor a 1.\n\n");
+		exit (0);
+	}else if (n > 10000000)
+	{
+		printf("Error, la cantidad de numeros debe ser menor a 10,000,000.\n");
+		exit (0);
+	}
 	printf("\n\nIngresa el algoritmo de ordenamiento deseado\n\n");
 	printf("1. Simple Bubble Sort\n");
 	printf("2. Optimized Bubble Sort\n");
@@ -182,12 +191,14 @@ void ArbolBinario (int * numeros, int n)
 	elemento e;
 	posicion pos;
 	InicializarArbol (&arbol);
+	printf("\n\n\nInsertando numeros en el arbol binario...\n\n");
 	for (i = 0; i < n; i ++)
 	{
 		e.numero = numeros [i];												//Guardamos cada numero en el elemento 'numero' del nodo
 		InsertarABB (&arbol, e);											//Insertamos los numeros en el arbol
 	}
 	free (numeros);
+	printf("\n\nNumeros ordenados...\n\n");
 	//uswtime(&utime0, &stime0, &wtime0);									//Comenzamos a tomar el tiempo del algoritmo
 	pos = Raiz (&arbol);
 	Inorden (&arbol, pos);													//Ordenamos y mostramos los numeros ordenados por el algoritmo
