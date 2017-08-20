@@ -374,8 +374,7 @@ void Inorden (arbolBinario * a, posicion p)
 	if (!PosicionNula (a, p))
 	{
 		Inorden (a, HijoIzquierdo (a, p));
-		e = BuscaElemento (a, p);
-		printf("%d\n", e.numero);
+		printf("%d\n", p -> e.numero);
 		Inorden (a, HijoDerecho (a, p));
 	}
 	return;
