@@ -175,7 +175,6 @@ elemento BuscaElemento (arbolBinario * A, posicion p)
 		printf ("Error: BuscaElemento");
 		exit (1);
 	}
-	
 	return r;
 }
 
@@ -355,7 +354,7 @@ void Preorden (arbolBinario * a, posicion p)
 	if (!PosicionNula (a, p))
 	{
 		e = BuscaElemento (a, p);
-		printf("\t%d", e.numero);
+		printf("%d\n", e.numero);
 		Preorden (a, HijoIzquierdo (a, p));
 		Preorden (a, HijoDerecho (a, p));
 	}
@@ -368,15 +367,16 @@ Inorden (A,P)
 Efecto: Recibe un árbol binario A y una posición P, realiza el recorrido izquierdo -> raiz -> derecho a partir de la posicion P.
 Requerimientos: El árbol binario A es no vacío y la posición P es una posición valida.
 */
-void Inorden (arbolBinario * a, posicion p)
+void Inorden (arbolBinario * a, posicion p, int * numeros)
 {
 	elemento e;
+	int i = 0;
 	if (!PosicionNula (a, p))
 	{
-		Inorden (a, HijoIzquierdo (a, p));
+		Inorden (a, HijoIzquierdo (a, p), numeros);
 		e = BuscaElemento (a, p);
-		printf("\t%d", e.numero);
-		Inorden (a, HijoDerecho (a, p));
+		printf("%d\n", e.numero);
+		Inorden (a, HijoDerecho (a, p), numeros);
 	}
 	return;
 }
@@ -395,7 +395,7 @@ void Postorden (arbolBinario * a, posicion p)
 		Postorden (a, HijoIzquierdo (a, p));
 		Postorden (a, HijoDerecho (a, p));
 		e = BuscaElemento (a, p);
-		printf ("\t%d", e.numero);
+		printf ("%d\n", e.numero);
 	}
 	return;
 }
