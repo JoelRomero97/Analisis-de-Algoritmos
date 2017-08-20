@@ -178,11 +178,21 @@ void Shell (int * numeros, int n)
 
 void ArbolBinario (int * numeros, int n)
 {
+	arbolBinario arbol;
+	elemento e;
+	posicion pos;
+	InicializarArbol (&arbol);
 	//uswtime(&utime0, &stime0, &wtime0);									//Comenzamos a tomar el tiempo del algoritmo
-	//
+	for (i = 0; i < n; i ++)
+	{
+		e.numero = numeros [i];
+		InsertarABB (&arbol, e);
+	}
+	pos = Raiz (&arbol);
+	Inorden (&arbol, pos);
 	//uswtime(&utime1, &stime1, &wtime1);									//Terminamos de tomar el tiempo del algoritmo
 	//calculaTiempo (utime0, stime0, wtime0, utime1, stime1, wtime1, n, 5);	//Calculamos el tiempo del algoritmo y lo mostramos
-	numerosOrdenados (numeros, n);											//Mostramos los numeros ordenados por el algoritmo
+	//numerosOrdenados (numeros, n);											//Mostramos los numeros ordenados por el algoritmo
 }
 
 void calculaTiempo (double utime0, double stime0, double wtime0, double utime1, double stime1, double wtime1, int n, int algoritmo)

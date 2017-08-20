@@ -306,9 +306,9 @@ void BorraNodo (arbolBinario * A, posicion p)
 
 /*
 recibe<-árbol(A), posición (P), elemento (E);
-ReemplazaNodo (A,P)
+ReemplazaNodo (A,P, E)
 Efecto: Recibe un árbol binario A, una posición P y un elemento E, se remplaza a E del nodo con posición P en A.
-Requerimientos: El árbol binario A es no vacío y la posición P es una posición valida. 
+Requerimientos: El árbol binario A es no vacío y la posición P es una posición valida.
 */
 void ReemplazaNodo (arbolBinario * A, posicion p, elemento e)
 {
@@ -318,6 +318,84 @@ void ReemplazaNodo (arbolBinario * A, posicion p, elemento e)
 	{
 		printf ("Error: ReemplazaNodo ");
 		exit (1);
+	}
+	return;
+}
+
+/*
+recibe<-árbol(A), elemento (E);
+InsertarABB (A, E);
+Efecto: Recibe un árbol binario A y un elemento E, compara si E es menor o mayor a la raiz, si E es menor lo inserta a la izquierda, y si es
+mayor inserta a E a la derecha.
+Requerimientos: El árbol binario A es no vacío y el elemento E tiene un numero a ser comparado.
+*/
+void InsertarABB (arbolBinario * A, elemento e)
+{
+	if (Vacio (A))										//Si el arbol esta vacio creamos un nodo
+	{
+		* A = malloc (sizeof (nodo));					//Reservamos memoria para un nuevo nodo
+		(*A) -> e = e;
+		(*A) -> izq = NULL;								//Ponemos el hijo izquierdo a NULL
+		(*A) -> der = NULL;								//Ponemos el hijo derecho a NULL
+	}else if (e.numero < (*A) -> e.numero)			//Si el elemento insertado es menor a la raiz
+		InsertarABB (&((*A) -> izq), e);				//Insertamos el elemento a la izquierda
+	else
+		InsertarABB (&((*A) -> der), e);				//Si no, lo insertamos a la derecha
+}
+
+/*
+recibe<-árbol(A), posición (P);
+Preorden (A,P)
+Efecto: Recibe un árbol binario A y una posición P, realiza el recorrido raíz -> izquierdo -> derecho a partir de la posicion P.
+Requerimientos: El árbol binario A es no vacío y la posición P es una posición valida.
+*/
+void Preorden (arbolBinario * a, posicion p)
+{
+	elemento e;
+	if (!PosicionNula (a, p))
+	{
+		e = BuscaElemento (a, p);
+		printf("\t%d", e.numero);
+		Preorden (a, HijoIzquierdo (a, p));
+		Preorden (a, HijoDerecho (a, p));
+	}
+	return;
+}
+
+/*
+recibe<-árbol(A), posición (P);
+Inorden (A,P)
+Efecto: Recibe un árbol binario A y una posición P, realiza el recorrido izquierdo -> raiz -> derecho a partir de la posicion P.
+Requerimientos: El árbol binario A es no vacío y la posición P es una posición valida.
+*/
+void Inorden (arbolBinario * a, posicion p)
+{
+	elemento e;
+	if (!PosicionNula (a, p))
+	{
+		Inorden (a, HijoIzquierdo (a, p));
+		e = BuscaElemento (a, p);
+		printf("\t%d", e.numero);
+		Inorden (a, HijoDerecho (a, p));
+	}
+	return;
+}
+
+/*
+recibe<-árbol(A), posición (P);
+Postorden (A,P)
+Efecto: Recibe un árbol binario A y una posición P, realiza el recorrido izquierdo -> derecho -> raiz a partir de la posicion P.
+Requerimientos: El árbol binario A es no vacío y la posición P es una posición valida.
+*/
+void Postorden (arbolBinario * a, posicion p)
+{
+	elemento e;
+	if (!PosicionNula (a, p))
+	{
+		Postorden (a, HijoIzquierdo (a, p));
+		Postorden (a, HijoDerecho (a, p));
+		e = BuscaElemento (a, p);
+		printf ("\t%d", e.numero);
 	}
 	return;
 }

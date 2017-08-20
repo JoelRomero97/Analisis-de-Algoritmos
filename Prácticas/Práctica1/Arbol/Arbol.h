@@ -143,3 +143,36 @@ ReemplazaNodo (A,P)
 Efecto: Recibe un árbol binario A, una posición P y un elemento E, se remplaza a E del nodo con posición P en A.
 Requerimientos: El árbol binario A es no vacío y la posición P es una posición valida. 
 */
+
+void InsertarABB(arbolBinario * A, elemento e);
+/*
+recibe<-árbol(A), elemento (E);
+InsertarABB (A, E);
+Efecto: Recibe un árbol binario A y un elemento E, compara si E es menor o mayor a la raiz, si E es menor lo inserta a la izquierda, y si es
+mayor inserta a E a la derecha.
+Requerimientos: El árbol binario A es no vacío y el elemento E tiene un numero a ser comparado.
+*/
+
+void Preorden (arbolBinario * a, posicion p);
+/*
+recibe<-árbol(A), posición (P);
+Preorden (A,P)
+Efecto: Recibe un árbol binario A y una posición P, realiza el recorrido raíz -> izquierdo -> derecho a partir de la posicion P.
+Requerimientos: El árbol binario A es no vacío y la posición P es una posición valida.
+*/
+
+void Inorden (arbolBinario * a, posicion p);
+/*
+recibe<-árbol(A), posición (P);
+Inorden (A,P)
+Efecto: Recibe un árbol binario A y una posición P, realiza el recorrido izquierdo -> raiz -> derecho a partir de la posicion P.
+Requerimientos: El árbol binario A es no vacío y la posición P es una posición valida.
+*/
+
+void Postorden (arbolBinario * a, posicion p);
+/*
+recibe<-árbol(A), posición (P);
+Postorden (A,P)
+Efecto: Recibe un árbol binario A y una posición P, realiza el recorrido izquierdo -> derecho -> raiz a partir de la posicion P.
+Requerimientos: El árbol binario A es no vacío y la posición P es una posición valida.
+*/
