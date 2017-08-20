@@ -242,10 +242,9 @@ void numerosOrdenados (int * numeros, int n)
 	archivoOrdenado = fopen ("numerosOrdenados.txt", "w");
 	if (archivoOrdenado == NULL)
 		printf("Error al crear el archivo con los %d numeros ordenados \n", n);
-	else
-		printf("Archivo creado  con los %d numeros ordenados correctamente\n", n);
 	for (i = 0; i < n; i ++)
 		fprintf(archivoOrdenado, "%d\n", numeros [i]);						//Imprimimos el arreglo de numeros
+	printf("Archivo creado  con los %d numeros ordenados correctamente\n", n);
 	free (numeros);
 	fclose (archivoOrdenado);
 }
