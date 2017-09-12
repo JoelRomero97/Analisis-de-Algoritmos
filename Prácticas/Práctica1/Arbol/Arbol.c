@@ -381,45 +381,6 @@ void Inorden (arbolBinario * a, posicion p)
 
 /*
 recibe<-árbol(A), posición (P);
-Inorden (A,P)
-Efecto: Recibe un árbol binario A y una posición P, realiza el recorrido izquierdo -> raiz -> derecho a partir de la posicion P.
-Requerimientos: El árbol binario A es no vacío y la posición P es una posición valida.
-
-void Inorden (arbolBinario * a, posicion p)
-{
-	elemento e;
-	posicion pos = p;
-	pos = HijoIzquierdo (a, p);
-	//p = pos;
-	if (!PosicionNula (a, p))
-	{
-		while (!PosicionNula (a, pos))
-		{
-			p = pos;
-			pos = HijoIzquierdo (a, p);
-		}														//Al terminar el ciclo, 'p' tiene la posicion valida y 'pos' es NULL
-		printf("%d\n", p -> e.numero);							//Imprimimos el elemento mas a la izquierda
-		pos = Padre (a, p);
-		BorraNodo (a, p);
-		printf("%d\n", pos -> e.numero);						//Imprimimos la raiz
-		if (!PosicionNula (a, HijoDerecho (a, pos)))
-		{
-			p = HijoDerecho (a, pos);
-		}
-		else
-		{
-			p = Padre (a, pos);
-			BorraNodo (a, pos);
-			printf("%d\n", p -> e.numero);
-		}
-		Inorden (a, p);
-	}
-	return;
-}
-*/
-
-/*
-recibe<-árbol(A), posición (P);
 Postorden (A,P)
 Efecto: Recibe un árbol binario A y una posición P, realiza el recorrido izquierdo -> derecho -> raiz a partir de la posicion P.
 Requerimientos: El árbol binario A es no vacío y la posición P es una posición valida.
