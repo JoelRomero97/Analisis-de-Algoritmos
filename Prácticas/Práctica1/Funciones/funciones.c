@@ -8,35 +8,8 @@
 int i, j, temp;																//Variables globales para manejar los ciclos y temporal
 double utime0, stime0, wtime0,utime1, stime1, wtime1;						//Variables para medir el tiempo
 
-void menu ()
-{
-	int n, algoritmo;
-	system ("clear");
-	printf("\nIngresa la cantidad de numeros a ordenar:\t");
-	scanf ("%d", &n);
-	if (n <= 0)
-	{
-		printf("Error, la cantidad de numeros debe ser mayor a 1.\n\n");
-		exit (0);
-	}else if (n > 10000000)
-	{
-		printf("Error, la cantidad de numeros debe ser menor a 10,000,000.\n");
-		exit (0);
-	}
-	printf("\n\nIngresa el algoritmo de ordenamiento deseado\n\n");
-	printf("1. Simple Bubble Sort\n");
-	printf("2. Optimized Bubble Sort\n");
-	printf("3. Insertion Sort\n");
-	printf("4. Selection Sort\n");
-	printf("5. Shell Sort\n");
-	printf("6. Binary Tree Sort\n\n");
-	scanf ("%d", &algoritmo);
-	seleccionarAlgoritmo (algoritmo, n);
-}
-
 void seleccionarAlgoritmo (int algoritmo, int n)
 {
-	system ("clear");
 	int * numeros = (int *) malloc (sizeof (int) * n);						//Creamos un arreglo dinámico de tamaño n para los numeros
 	numeros = leerArchivo (numeros, n);										//Obtenemos los n numeros en un arreglo dinamico
 	switch (algoritmo)
@@ -70,9 +43,10 @@ int * leerArchivo (int * numeros, int n)
 	FILE * archivo;
 	archivo = fopen ("numeros.txt", "r");									//Abrimos el archivo de numeros para lectura
 	if (archivo == NULL)
+	{
 		printf("Error al abrir el archivo con los numeros desordenados .\n\n\n");
-	else
-		printf("Archivo con los numeros desordenados abierto correctamente.\n\n\n");
+		exit (0);
+	}
 	for (i = 0; i < n; i ++)
 		fscanf (archivo, "%d", &numeros [i]);								//Guardamos los n numeros en un arreglo dinamico
 	numeros [i] = '\0';
@@ -82,7 +56,7 @@ int * leerArchivo (int * numeros, int n)
 
 void BurbujaSimple (int * numeros, int n)
 {
-	uswtime(&utime0, &stime0, &wtime0);									//Comenzamos a tomar el tiempo del algoritmo
+	uswtime(&utime0, &stime0, &wtime0);										//Comenzamos a tomar el tiempo del algoritmo
 	for (i = 1; i < n; i ++)
 		for (j = 0; j < (n - 1); j ++)
 		{
@@ -93,7 +67,7 @@ void BurbujaSimple (int * numeros, int n)
 				numeros [j + 1] = temp;
 			}
 		}
-	uswtime(&utime1, &stime1, &wtime1);									//Terminamos de tomar el tiempo del algoritmo
+	uswtime(&utime1, &stime1, &wtime1);										//Terminamos de tomar el tiempo del algoritmo
 	calculaTiempo (utime0, stime0, wtime0, utime1, stime1, wtime1, n, 1);	//Calculamos el tiempo del algoritmo y lo mostramos
 	numerosOrdenados (numeros, n);											//Mostramos los numeros ordenados por el algoritmo
 }
@@ -101,7 +75,7 @@ void BurbujaSimple (int * numeros, int n)
 void BurbujaOptimizada (int * numeros, int n)
 {
 	char cambios [2] = "si";
-	uswtime(&utime0, &stime0, &wtime0);									//Comenzamos a tomar el tiempo del algoritmo
+	uswtime(&utime0, &stime0, &wtime0);										//Comenzamos a tomar el tiempo del algoritmo
 	for (i = 1; ((i < n) && strcmp (cambios, "si") == 0); i ++)
 		for (j = 0; j < n; j ++)
 		{
@@ -113,14 +87,14 @@ void BurbujaOptimizada (int * numeros, int n)
 				strcpy (cambios, "si");
 			}
 		}
-	uswtime(&utime1, &stime1, &wtime1);									//Terminamos de tomar el tiempo del algoritmo
+	uswtime(&utime1, &stime1, &wtime1);										//Terminamos de tomar el tiempo del algoritmo
 	calculaTiempo (utime0, stime0, wtime0, utime1, stime1, wtime1, n, 2);	//Calculamos el tiempo del algoritmo y lo mostramos
 	numerosOrdenados (numeros, n);											//Mostramos los numeros ordenados por el algoritmo
 }
 
 void Insercion (int * numeros, int n)
 {
-	uswtime(&utime0, &stime0, &wtime0);									//Comenzamos a tomar el tiempo del algoritmo
+	uswtime(&utime0, &stime0, &wtime0);										//Comenzamos a tomar el tiempo del algoritmo
 	for (i = 1; i < n; i ++)
 	{
 		temp = numeros [i];
@@ -132,7 +106,7 @@ void Insercion (int * numeros, int n)
 		}
 		numeros [j + 1] = temp;
 	}
-	uswtime(&utime1, &stime1, &wtime1);									//Terminamos de tomar el tiempo del algoritmo
+	uswtime(&utime1, &stime1, &wtime1);										//Terminamos de tomar el tiempo del algoritmo
 	calculaTiempo (utime0, stime0, wtime0, utime1, stime1, wtime1, n, 3);	//Calculamos el tiempo del algoritmo y lo mostramos
 	numerosOrdenados (numeros, n);											//Mostramos los numeros ordenados por el algoritmo
 }
@@ -140,7 +114,7 @@ void Insercion (int * numeros, int n)
 void Seleccion (int * numeros, int n)
 {
 	int p;
-	uswtime(&utime0, &stime0, &wtime0);									//Comenzamos a tomar el tiempo del algoritmo
+	uswtime(&utime0, &stime0, &wtime0);										//Comenzamos a tomar el tiempo del algoritmo
 	for (i = 0; i < (n - 1); i ++)
 	{
 		p = i;
@@ -156,7 +130,7 @@ void Seleccion (int * numeros, int n)
 			numeros [i] = temp;
 		}
 	}
-	uswtime(&utime1, &stime1, &wtime1);									//Terminamos de tomar el tiempo del algoritmo
+	uswtime(&utime1, &stime1, &wtime1);										//Terminamos de tomar el tiempo del algoritmo
 	calculaTiempo (utime0, stime0, wtime0, utime1, stime1, wtime1, n, 4);	//Calculamos el tiempo del algoritmo y lo mostramos
 	numerosOrdenados (numeros, n);											//Mostramos los numeros ordenados por el algoritmo
 }
@@ -164,7 +138,7 @@ void Seleccion (int * numeros, int n)
 void Shell (int * numeros, int n)
 {
 	int k = n / 2;
-	uswtime(&utime0, &stime0, &wtime0);									//Comenzamos a tomar el tiempo del algoritmo
+	uswtime(&utime0, &stime0, &wtime0);										//Comenzamos a tomar el tiempo del algoritmo
 	while (k > 0)
 	{
 		for (i = k; i < n; i ++)
@@ -180,7 +154,7 @@ void Shell (int * numeros, int n)
 		}
 		k /= 2;
 	}
-	uswtime(&utime1, &stime1, &wtime1);									//Terminamos de tomar el tiempo del algoritmo
+	uswtime(&utime1, &stime1, &wtime1);										//Terminamos de tomar el tiempo del algoritmo
 	calculaTiempo (utime0, stime0, wtime0, utime1, stime1, wtime1, n, 5);	//Calculamos el tiempo del algoritmo y lo mostramos
 	numerosOrdenados (numeros, n);											//Mostramos los numeros ordenados por el algoritmo
 }
@@ -199,10 +173,10 @@ void ArbolBinario (int * numeros, int n)
 	}
 	free (numeros);
 	printf("\n\nNumeros ordenados...\n\n");
-	uswtime(&utime0, &stime0, &wtime0);									//Comenzamos a tomar el tiempo del algoritmo
 	pos = Raiz (&arbol);
+	uswtime(&utime0, &stime0, &wtime0);										//Comenzamos a tomar el tiempo del algoritmo
 	Inorden (&arbol, pos);													//Ordenamos y mostramos los numeros ordenados por el algoritmo
-	uswtime(&utime1, &stime1, &wtime1);									//Terminamos de tomar el tiempo del algoritmo
+	uswtime(&utime1, &stime1, &wtime1);										//Terminamos de tomar el tiempo del algoritmo
 	calculaTiempo (utime0, stime0, wtime0, utime1, stime1, wtime1, n, 6);	//Calculamos el tiempo del algoritmo y lo mostramos
 }
 
@@ -252,10 +226,12 @@ void numerosOrdenados (int * numeros, int n)
 	FILE * archivoOrdenado;
 	archivoOrdenado = fopen ("numerosOrdenados.txt", "w");
 	if (archivoOrdenado == NULL)
+	{
 		printf("Error al crear el archivo con los %d numeros ordenados \n", n);
+		exit (0);
+	}
 	for (i = 0; i < n; i ++)
 		fprintf(archivoOrdenado, "%d\n", numeros [i]);						//Imprimimos el arreglo de numeros
-	printf("Archivo creado  con los %d numeros ordenados correctamente\n", n);
 	free (numeros);
 	fclose (archivoOrdenado);
 }

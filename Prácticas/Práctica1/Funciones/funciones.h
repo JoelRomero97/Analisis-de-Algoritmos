@@ -1,4 +1,3 @@
-void menu ();
 void seleccionarAlgoritmo (int algoritmo, int n);
 int * leerArchivo (int * numeros, int n);
 void BurbujaSimple (int * numeros, int n);
