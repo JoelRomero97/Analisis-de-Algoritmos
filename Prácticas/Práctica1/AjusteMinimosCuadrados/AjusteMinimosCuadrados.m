@@ -21,4 +21,4 @@ figure(1);
 plot(x,y,'go',xi,z,'-'),grid;
 ylabel('Segundos');
 xlabel('Numeros a ordenar');
-title('Ajuste de minimos cuadrados (Shell)');
+title('Ajuste de minimos cuadrados (Insercion)');
