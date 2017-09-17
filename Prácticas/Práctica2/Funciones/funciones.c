@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "funciones.h"
-//#include "../Arbol/Arbol.c"
+#include "../Arbol/Arbol.c"
 #include "../MedirTiempo/tiempo.c"
 #include <string.h>
 
@@ -20,9 +20,9 @@ void SeleccionarAlgoritmo (int n, int AlgoritmoBusqueda, int NumeroBuscar)
 		case 2: 
 				BusquedaBinaria (numeros, n, NumeroBuscar);
 				break;
-		/*case 3: 
+		case 3: 
 				BusquedaArbol (numeros, n, NumeroBuscar);
-				break;*/
+				break;
 		default: 
 				printf ("Opcion Incorrecta\n");
 				 exit (0);
@@ -94,6 +94,25 @@ void BusquedaBinaria (int * numeros, int n, int NumeroBuscar)
 		printf("Numero %d NO LOCALIZADO\n", NumeroBuscar);
 	uswtime(&utime1, &stime1, &wtime1);
 	calculaTiempo (utime0, stime0, wtime0, utime1, stime1, wtime1, n, 2, NumeroBuscar);
+}
+
+void BusquedaArbol (int * numeros, int n, int NumeroBuscar)
+{
+	arbolBinario arbol;
+	elemento e;
+	posicion pos;
+	InicializarArbol (&arbol);
+	for (i = 0; i < n; i ++)
+	{
+		e.numero = numeros [i];
+		InsertarABB (&arbol, e);
+	}
+	free (numeros);
+	pos = Raiz (&arbol);
+	uswtime (&utime0, &stime0, &wtime0);												//Comenzamos a tomar el tiempo del algoritmo
+	BuscarABB (&arbol, pos, NumeroBuscar);												//Buscamos el numero deseado en el arbol binario
+	uswtime(&utime1, &stime1, &wtime1);													//Terminamos de tomar el tiempo del algoritmo
+	calculaTiempo (utime0, stime0, wtime0, utime1, stime1, wtime1, n, 3, NumeroBuscar);	//Calculamos el tiempo del algoritmo y lo mostramos
 }
 
 void calculaTiempo (double utime0, double stime0, double wtime0, double utime1, double stime1, double wtime1, int n, int AlgoritmoBusqueda, int NumeroBuscar)
