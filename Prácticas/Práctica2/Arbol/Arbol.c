@@ -3,6 +3,7 @@ ESTRUCTURAS DE DATOS 1CM7
 ABRIL 2017
 */
 #include <stdlib.h>
+#include <string.h>
 #include "Arbol.h"
 
 
@@ -351,22 +352,22 @@ Requerimientos: El árbol binario A es no vacío y la posicion P es una posició
 */
 void BuscarABB (arbolBinario * A, posicion p, int NumeroBuscar)
 {
-	if (!PosicionNula (A, p))
+	if (PosicionNula (A, p))
     {
       	printf("Numero %d NO LOCALIZADO\n", NumeroBuscar);
       	return;
     }else
     {
-	  	if (NumeroBuscar == p->e.numero)
+	  	if (NumeroBuscar == p -> e.numero)
 	    {
 	     	printf("Numero %d LOCALIZADO\n", NumeroBuscar);
 	     	return;
-	    }else if (NumeroBuscar > p->e.numero)
+	    }else if (NumeroBuscar > p -> e.numero)
 	    {
-	     	BuscarABB (A, p->der, NumeroBuscar);
+	     	BuscarABB (A, p -> der, NumeroBuscar);
 	    }else
 	    {
-	     	BuscarABB (A, p->izq, NumeroBuscar);
+	     	BuscarABB (A, p -> izq, NumeroBuscar);
 	    }
 	}
 }
