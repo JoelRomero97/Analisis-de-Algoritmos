@@ -336,7 +336,7 @@ void InsertarABB (arbolBinario * A, elemento e)
 		(*A) -> e = e;
 		(*A) -> izq = NULL;								//Ponemos el hijo izquierdo a NULL
 		(*A) -> der = NULL;								//Ponemos el hijo derecho a NULL
-	}else if (e.numero < (*A) -> e.numero)			//Si el elemento insertado es menor a la raiz
+	}else if (e.numero < (*A) -> e.numero)				//Si el elemento insertado es menor a la raiz
 		InsertarABB (&((*A) -> izq), e);				//Insertamos el elemento a la izquierda
 	else
 		InsertarABB (&((*A) -> der), e);				//Si no, lo insertamos a la derecha
