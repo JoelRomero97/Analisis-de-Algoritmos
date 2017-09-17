@@ -68,7 +68,7 @@ void BusquedaLineal (int * numeros, int n, int NumeroBuscar)
 
 void BusquedaBinaria (int * numeros, int n, int NumeroBuscar)
 {
-	int inferior = 0, superior = n;
+	int inferior = 0, superior = n, mitad;
 	i = 0;
 	contador = 0;
 	uswtime (&utime0, &stime0, &wtime0);
