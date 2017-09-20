@@ -363,12 +363,9 @@ void BuscarABB (arbolBinario * A, posicion p, int NumeroBuscar)
 	     	printf("Numero %d LOCALIZADO\n", NumeroBuscar);
 	     	return;
 	    }else if (NumeroBuscar > p -> e.numero)
-	    {
 	     	BuscarABB (A, p -> der, NumeroBuscar);
-	    }else
-	    {
+	    else
 	     	BuscarABB (A, p -> izq, NumeroBuscar);
-	    }
 	}
 }
 
