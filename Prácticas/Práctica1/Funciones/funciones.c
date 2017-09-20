@@ -159,25 +159,13 @@ void Shell (int * numeros, int n)
 	numerosOrdenados (numeros, n);											//Mostramos los numeros ordenados por el algoritmo
 }
 
-void ArbolBinario (int * numeros, int n)
+void ArbolBinario (int *numeros,int n)
 {
-	arbolBinario arbol;
-	elemento e;
-	posicion pos;
-	InicializarArbol (&arbol);
-	printf("\n\n\nInsertando numeros en el arbol binario...\n\n");
-	for (i = 0; i < n; i ++)
-	{
-		e.numero = numeros [i];												//Guardamos cada numero en el elemento 'numero' del nodo
-		InsertarABB (&arbol, e);											//Insertamos los numeros en el arbol
-	}
-	free (numeros);
-	printf("\n\nNumeros ordenados...\n\n");
-	pos = Raiz (&arbol);
-	uswtime(&utime0, &stime0, &wtime0);										//Comenzamos a tomar el tiempo del algoritmo
-	Inorden (&arbol, pos);													//Ordenamos y mostramos los numeros ordenados por el algoritmo
-	uswtime(&utime1, &stime1, &wtime1);										//Terminamos de tomar el tiempo del algoritmo
+	uswtime(&utime0, &stime0, &wtime0);									//Comenzamos a tomar el tiempo del algoritmo
+	numeros = InsertarABB(numeros,n);
+	uswtime(&utime1, &stime1, &wtime1);									//Terminamos de tomar el tiempo del algoritmo											//Ordenamos y mostramos los numeros ordenados por el algoritmo
 	calculaTiempo (utime0, stime0, wtime0, utime1, stime1, wtime1, n, 6);	//Calculamos el tiempo del algoritmo y lo mostramos
+	numerosOrdenados (numeros, n);
 }
 
 void calculaTiempo (double utime0, double stime0, double wtime0, double utime1, double stime1, double wtime1, int n, int algoritmo)
