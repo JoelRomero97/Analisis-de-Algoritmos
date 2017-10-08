@@ -62,20 +62,17 @@ void BusquedaLineal (int * numeros, int n, int NumeroBuscar)
 
 void BusquedaBinaria (int * numeros, int n, int NumeroBuscar)
 {
-	int inferior = 0, superior = n, mitad = ((inferior + superior) / 2);
-	i = 0;
+	int inferior = 0, superior = n, mitad = (n / 2);
 	uswtime (&utime0, &stime0, &wtime0);
-	while ((inferior <= superior) && (i < n) && (numeros [mitad] != NumeroBuscar))
+	while ((inferior <= superior) && (numeros [mitad] != NumeroBuscar))
 	{
-		mitad = ((inferior + superior) / 2);
 		if (numeros [mitad] > NumeroBuscar)
-			superior = mitad;
+			superior = (mitad - 1);
 		else
-			inferior = mitad;
+			inferior = (mitad + 1);
 		mitad = ((inferior + superior) / 2);
-		i++;
 	}
-	if (i >= n)
+	if (inferior > superior)
 		printf("Numero %d NO LOCALIZADO\n", NumeroBuscar);
 	else
 		printf("Numero %d LOCALIZADO\n", NumeroBuscar);

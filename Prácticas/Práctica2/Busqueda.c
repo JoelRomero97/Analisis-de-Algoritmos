@@ -6,7 +6,8 @@ int main(int argc, char const *argv[])
 {
 	if (argc < 4)
 	{
-		printf("Hacen falta argumentos\n");
+		printf("\nHacen falta argumentos\n");
+		printf ("\nEjemplo: '%s 1000000 2 117240'\n\n", argv [0]);
 		exit(1);
 	}
 	int n = atoi(argv[1]); 										//Tamaño del arreglo
