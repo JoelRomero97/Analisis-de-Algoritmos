@@ -18,7 +18,7 @@ Algoritmos implementados:
   - chmod 777 BurbujaSimple.sh
   - ./BurbujaSimple.sh
 
-Automáticamente comenzarán a ejecutarse todos los algoritmos (tiempo aproximado: 12 horas)
+Automáticamente comenzarán a ejecutarse todos los algoritmos (tiempo aproximado de ejecución: 14 horas)
 
 # Compilación y ejecución manual
 
