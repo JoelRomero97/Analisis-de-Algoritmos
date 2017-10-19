@@ -25,7 +25,14 @@ Automáticamente comenzarán a ejecutarse todos los algoritmos (tiempo aproximad
 - gcc Ordenamiento.c -o Ordenamiento
 - ./Ordenamiento Tamaño_Arreglo Algoritmo_Seleccionado
 
-Algoritmo_Seleccionado: 1 para Bubble Sort, 2 para Optimized Bubble Sort, 3 para Insertion Sort y así sucesivamente
+Opciones para "Algoritmo_Seleccionado":
+
+- 1 para Bubble Sort
+- 2 para Optimized Bubble Sort
+- 3 para Insertion Sort
+- 4 para Selection Sort
+- 5 para Shell Sort
+- 6 para Binary Tree Sort
 
 # Autor
 
