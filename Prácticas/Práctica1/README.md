@@ -1,6 +1,6 @@
 # Métodos de Ordenamiento
 
-Implementación de 6 distintos algoritmos de ordenamiento leyendo un máximo de 10 millones de números utilizando scripts para la realización de las pruebas
+Implementación de 6 distintos algoritmos de ordenamiento leyendo un máximo de 10 millones de números desordenados utilizando scripts para la realización de las pruebas
 
 Algoritmos implementados:
 
@@ -13,7 +13,7 @@ Algoritmos implementados:
 
 # Compilación y ejecución con pruebas definidas
 
-- Ir al directorio "Scripts" y modificar las rutas de todos los scripts en las líneas 7, 8 y al final de cada uno
+- Ir al directorio "Scripts" y modificar las rutas de todos los scripts en la línea 7 y al final de cada uno
 - Abrir una terminal en el directorio "Scripts" y escribir:
   - chmod 777 BurbujaSimple.sh
   - ./BurbujaSimple.sh
