@@ -11,5 +11,7 @@ Problemas clásicos de divide y vencerás y programación dinámica en lenguaje 
 # Equipo de Trabajo
 
 Joel Mauricio Romero Gamarra
+
 René Zavala Pérez
+
 Alan Ernesto González Barrios
