@@ -15,7 +15,7 @@ Algoritmos implementados:
   - chmod 777 BusquedaLineal.sh
   - ./BusquedaLineal.sh
 
-Automáticamente comenzarán a ejecutarse todos los algoritmos (tiempo aproximado: 2 horas)
+Automáticamente comenzarán a ejecutarse todos los algoritmos (tiempo aproximado de ejecución: 2 horas)
 
 # Compilación y ejecución manual
 
