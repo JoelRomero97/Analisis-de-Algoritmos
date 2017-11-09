@@ -11,7 +11,7 @@ Algoritmos implementados:
 - Shell Sort
 - Binary Tree Sort
 
-# Compilación y ejecución con pruebas definidas
+# Compilación y ejecución con pruebas predefinidas
 
 - Ir al directorio "Scripts" y modificar las rutas de todos los scripts en la línea 7 y al final de cada uno
 - Abrir una terminal en el directorio "Scripts" y escribir:
