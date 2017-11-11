@@ -437,8 +437,8 @@ posicion busca_elemento (lista * l, elemento e)
 /*
 	void imprimir_lista (lista * l)
 	Descripción: Imprime todos los elementos de la lista junto con la frecuencia de aparición
-	Recibe: Un apuntador a la lista para hacer la busqueda y el elemento a buscar
-	Regresa: Posicion del elemento que contiene al caracter c
+	Recibe: Un apuntador a la lista para hacer la impresión de todos sus elementos
+	Regresa: 
 */
 void imprimir_lista (lista * l)
 {
@@ -451,11 +451,22 @@ void imprimir_lista (lista * l)
 		for(i = 1; i <= num_elem; i ++)
 		{
 			e = Element(l, i);
-			printf("\nElemento: %c\tASCII: %d\tFrecuencia: %d", e.c, e.c, e.frecuencia);
+			printf("\nByte: '%c'\t\tASCII: %d\t\tFrecuencia: %d", e.c, e.c, e.frecuencia);
 		}
 	}else
 	{
 		printf("\nLista Vacia");
 	}
 	return;	
+}
+
+/*
+	void ordenar_lista (lista * l)
+	Descripción: Ordena los elementos de la lista de menor a mayor
+	Recibe: Un apuntador a la lista para hacer el ordenamiento por frecuencias
+	Regresa: 
+*/
+void ordenar_lista (lista * l)
+{
+	//
 }

@@ -28,16 +28,16 @@ void codificar_archivo (char * archivo, char * nuevo)
 		pos = busca_elemento (&list, e);
 		if (pos != NULL)												//Si el caracter leído ya se había leído antes
 		{
-			e = Position (&list, pos);									//Obtenemos ese elemento para aumentar frecuencia en 1
-			e.frecuencia++;
-			Replace (&list, pos, e);
+			//Aumentamos la frecuencia de ese caracter que ya había aparecido
+			(pos -> e).frecuencia ++;
 		}else															//Si el caracter leído no se había insertado
 		{
 			e.frecuencia = 1;											//Inicializamos la frecuencia en 1
 			Add (&list, e);												//Se agrega el elemento al final de la lista
 		}
 	}
-	imprimir_lista (&list);
+	//Ya que tenemos la lista con todos los elementos y la frecuencia, los ordenamos para hacer la creación de nodos en el árbol
+	imprimir_lista (&list);												//Imprimimos todos los caracteres que aparecieron con su frecuencia
 }
 
 /*
