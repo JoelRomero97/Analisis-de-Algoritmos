@@ -8,7 +8,7 @@ Algoritmos implementados:
 - Binary Search
 - Binary Search Tree
 
-# Compilación y ejecución con pruebas definidas
+# Compilación y ejecución con pruebas predefinidas
 
 - Ir al directorio "Scripts" y modificar las rutas de todos los scripts en las líneas 5 y 867
 - Abrir una terminal en el directorio "Scripts" y escribir:
