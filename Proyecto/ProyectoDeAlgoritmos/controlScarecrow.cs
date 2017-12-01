@@ -26,5 +26,10 @@ namespace ProyectoDeAlgoritmos
         {
 
         }
+
+        private void controlScarecrow_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
