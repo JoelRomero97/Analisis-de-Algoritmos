@@ -64,7 +64,7 @@
             // 
             // PanelAnimacion
             // 
-            this.PanelAnimacion.AnimationType = BunifuAnimatorNS.AnimationType.HorizBlind;
+            this.PanelAnimacion.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
             this.PanelAnimacion.Cursor = null;
             animation2.AnimateOnlyDifferences = true;
             animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
@@ -74,7 +74,7 @@
             animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
             animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
             animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(0);
+            animation2.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
             animation2.RotateCoeff = 0F;
             animation2.RotateLimit = 0F;
             animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
@@ -83,6 +83,7 @@
             animation2.TransparencyCoeff = 0F;
             this.PanelAnimacion.DefaultAnimation = animation2;
             this.PanelAnimacion.MaxAnimationTime = 3000;
+            this.PanelAnimacion.TimeStep = 0.01F;
             // 
             // panel1
             // 

@@ -32,10 +32,7 @@
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.IniciarSoldados = new Bunifu.Framework.UI.BunifuThinButton2();
             this.seleccionarSoldados1 = new ProyectoDeAlgoritmos.seleccionarSoldados();
-            this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.SuspendLayout();
             // 
             // bunifuCustomLabel1
@@ -85,59 +82,25 @@
             this.seleccionarSoldados1.Visible = false;
             this.seleccionarSoldados1.Load += new System.EventHandler(this.seleccionarSoldados1_Load);
             // 
-            // bunifuCustomLabel3
+            // bunifuCustomLabel4
             // 
-            this.bunifuCustomLabel3.AutoSize = true;
-            this.bunifuCustomLabel3.Font = new System.Drawing.Font("Segoe UI Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuCustomLabel3.Location = new System.Drawing.Point(267, 507);
-            this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
-            this.bunifuCustomLabel3.Size = new System.Drawing.Size(72, 13);
-            this.bunifuCustomLabel3.TabIndex = 28;
-            this.bunifuCustomLabel3.Text = "Alan González";
-            // 
-            // bunifuCustomLabel2
-            // 
-            this.bunifuCustomLabel2.AutoSize = true;
-            this.bunifuCustomLabel2.Font = new System.Drawing.Font("Segoe UI Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(661, 507);
-            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(62, 13);
-            this.bunifuCustomLabel2.TabIndex = 27;
-            this.bunifuCustomLabel2.Text = "Rene Zavala";
-            // 
-            // bunifuCustomLabel5
-            // 
-            this.bunifuCustomLabel5.AutoSize = true;
-            this.bunifuCustomLabel5.Font = new System.Drawing.Font("Segoe UI Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuCustomLabel5.Location = new System.Drawing.Point(459, 507);
-            this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
-            this.bunifuCustomLabel5.Size = new System.Drawing.Size(65, 13);
-            this.bunifuCustomLabel5.TabIndex = 26;
-            this.bunifuCustomLabel5.Text = "Joel Romero";
-            // 
-            // bunifuCustomLabel6
-            // 
-            this.bunifuCustomLabel6.AutoSize = true;
-            this.bunifuCustomLabel6.Font = new System.Drawing.Font("Segoe UI Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuCustomLabel6.Location = new System.Drawing.Point(59, 507);
-            this.bunifuCustomLabel6.Name = "bunifuCustomLabel6";
-            this.bunifuCustomLabel6.Size = new System.Drawing.Size(99, 13);
-            this.bunifuCustomLabel6.TabIndex = 25;
-            this.bunifuCustomLabel6.Text = "ESCOM IPN © 2017";
+            this.bunifuCustomLabel4.AutoSize = true;
+            this.bunifuCustomLabel4.Font = new System.Drawing.Font("Segoe UI Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.bunifuCustomLabel4.Location = new System.Drawing.Point(41, 507);
+            this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
+            this.bunifuCustomLabel4.Size = new System.Drawing.Size(794, 13);
+            this.bunifuCustomLabel4.TabIndex = 22;
+            this.bunifuCustomLabel4.Text = "Juan de Dios Bátiz, Ciudad de México,  ESCOM IPN © 2017                          " +
+    "                Alan Ernesto González Barrios  |  Joel Mauricio Romero Gamarra  " +
+    "|  René Zavala Pérez";
             // 
             // ControlSoldados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Controls.Add(this.bunifuCustomLabel3);
-            this.Controls.Add(this.bunifuCustomLabel2);
-            this.Controls.Add(this.bunifuCustomLabel5);
-            this.Controls.Add(this.bunifuCustomLabel6);
+            this.Controls.Add(this.bunifuCustomLabel4);
             this.Controls.Add(this.seleccionarSoldados1);
             this.Controls.Add(this.IniciarSoldados);
             this.Controls.Add(this.bunifuCustomLabel1);
@@ -153,9 +116,6 @@
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         public Bunifu.Framework.UI.BunifuThinButton2 IniciarSoldados;
         private seleccionarSoldados seleccionarSoldados1;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel3;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel5;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel6;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel4;
     }
 }

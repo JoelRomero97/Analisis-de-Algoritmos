@@ -31,12 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(seleccionarSoldados));
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.comparacionSoldados1 = new ProyectoDeAlgoritmos.comparacionSoldados();
-            this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,6 +58,15 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(807, 147);
             this.panel1.TabIndex = 1;
+            // 
+            // comparacionSoldados1
+            // 
+            this.comparacionSoldados1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.comparacionSoldados1.Location = new System.Drawing.Point(-16, -271);
+            this.comparacionSoldados1.Name = "comparacionSoldados1";
+            this.comparacionSoldados1.Size = new System.Drawing.Size(853, 532);
+            this.comparacionSoldados1.TabIndex = 11;
+            this.comparacionSoldados1.Visible = false;
             // 
             // bunifuThinButton21
             // 
@@ -88,68 +94,25 @@
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
             // 
-            // comparacionSoldados1
-            // 
-            this.comparacionSoldados1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.comparacionSoldados1.Location = new System.Drawing.Point(-16, -271);
-            this.comparacionSoldados1.Name = "comparacionSoldados1";
-            this.comparacionSoldados1.Size = new System.Drawing.Size(853, 532);
-            this.comparacionSoldados1.TabIndex = 11;
-            this.comparacionSoldados1.Visible = false;
-            // 
-            // bunifuCustomLabel7
-            // 
-            this.bunifuCustomLabel7.AutoSize = true;
-            this.bunifuCustomLabel7.Font = new System.Drawing.Font("Segoe UI Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuCustomLabel7.Location = new System.Drawing.Point(661, 507);
-            this.bunifuCustomLabel7.Name = "bunifuCustomLabel7";
-            this.bunifuCustomLabel7.Size = new System.Drawing.Size(62, 13);
-            this.bunifuCustomLabel7.TabIndex = 35;
-            this.bunifuCustomLabel7.Text = "Rene Zavala";
-            // 
-            // bunifuCustomLabel6
-            // 
-            this.bunifuCustomLabel6.AutoSize = true;
-            this.bunifuCustomLabel6.Font = new System.Drawing.Font("Segoe UI Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuCustomLabel6.Location = new System.Drawing.Point(459, 507);
-            this.bunifuCustomLabel6.Name = "bunifuCustomLabel6";
-            this.bunifuCustomLabel6.Size = new System.Drawing.Size(65, 13);
-            this.bunifuCustomLabel6.TabIndex = 34;
-            this.bunifuCustomLabel6.Text = "Joel Romero";
-            // 
             // bunifuCustomLabel4
             // 
             this.bunifuCustomLabel4.AutoSize = true;
             this.bunifuCustomLabel4.Font = new System.Drawing.Font("Segoe UI Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuCustomLabel4.Location = new System.Drawing.Point(267, 507);
+            this.bunifuCustomLabel4.Location = new System.Drawing.Point(41, 507);
             this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
-            this.bunifuCustomLabel4.Size = new System.Drawing.Size(72, 13);
-            this.bunifuCustomLabel4.TabIndex = 33;
-            this.bunifuCustomLabel4.Text = "Alan González";
-            // 
-            // bunifuCustomLabel5
-            // 
-            this.bunifuCustomLabel5.AutoSize = true;
-            this.bunifuCustomLabel5.Font = new System.Drawing.Font("Segoe UI Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuCustomLabel5.Location = new System.Drawing.Point(59, 507);
-            this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
-            this.bunifuCustomLabel5.Size = new System.Drawing.Size(99, 13);
-            this.bunifuCustomLabel5.TabIndex = 32;
-            this.bunifuCustomLabel5.Text = "ESCOM IPN © 2017";
+            this.bunifuCustomLabel4.Size = new System.Drawing.Size(794, 13);
+            this.bunifuCustomLabel4.TabIndex = 22;
+            this.bunifuCustomLabel4.Text = "Juan de Dios Bátiz, Ciudad de México,  ESCOM IPN © 2017                          " +
+    "                Alan Ernesto González Barrios  |  Joel Mauricio Romero Gamarra  " +
+    "|  René Zavala Pérez";
             // 
             // seleccionarSoldados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Controls.Add(this.bunifuCustomLabel7);
-            this.Controls.Add(this.bunifuCustomLabel6);
             this.Controls.Add(this.bunifuCustomLabel4);
-            this.Controls.Add(this.bunifuCustomLabel5);
             this.Controls.Add(this.bunifuThinButton21);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.bunifuCustomLabel1);
@@ -167,9 +130,6 @@
         private System.Windows.Forms.Panel panel1;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
         private comparacionSoldados comparacionSoldados1;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel7;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel6;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel4;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel5;
     }
 }
