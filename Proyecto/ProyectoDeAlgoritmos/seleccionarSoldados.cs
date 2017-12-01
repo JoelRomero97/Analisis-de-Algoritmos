@@ -25,5 +25,10 @@ namespace ProyectoDeAlgoritmos
         {
             comparacionSoldados1.Visible = true;
         }
+
+        private void bunifuCustomLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
