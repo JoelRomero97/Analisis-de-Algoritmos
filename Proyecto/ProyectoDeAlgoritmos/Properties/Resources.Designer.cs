@@ -63,9 +63,9 @@ namespace ProyectoDeAlgoritmos.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _32E64C905 {
+        internal static System.Drawing.Bitmap apagar {
             get {
-                object obj = ResourceManager.GetObject("32E64C905", resourceCulture);
+                object obj = ResourceManager.GetObject("apagar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,19 +73,9 @@ namespace ProyectoDeAlgoritmos.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap blue_home_house_12608 {
+        internal static System.Drawing.Bitmap apagar1 {
             get {
-                object obj = ResourceManager.GetObject("blue_home_house_12608", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap botonM {
-            get {
-                object obj = ResourceManager.GetObject("botonM", resourceCulture);
+                object obj = ResourceManager.GetObject("apagar1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +93,9 @@ namespace ProyectoDeAlgoritmos.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap EspantapajaroF {
+        internal static System.Drawing.Bitmap Espantapajaro {
             get {
-                object obj = ResourceManager.GetObject("EspantapajaroF", resourceCulture);
+                object obj = ResourceManager.GetObject("Espantapajaro", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,56 +113,6 @@ namespace ProyectoDeAlgoritmos.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap logoescom {
-            get {
-                object obj = ResourceManager.GetObject("logoescom", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Militar {
-            get {
-                object obj = ResourceManager.GetObject("Militar", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Paisaje_en_8_bits_imagenes_minimalistas_1920x1200_730x412 {
-            get {
-                object obj = ResourceManager.GetObject("Paisaje-en-8-bits-imagenes-minimalistas-1920x1200-730x412", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap scarecrow_576497_640 {
-            get {
-                object obj = ResourceManager.GetObject("scarecrow-576497_640", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap scarecrow_576497_6401 {
-            get {
-                object obj = ResourceManager.GetObject("scarecrow-576497_6401", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Soldado {
             get {
                 object obj = ResourceManager.GetObject("Soldado", resourceCulture);
@@ -183,39 +123,9 @@ namespace ProyectoDeAlgoritmos.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Soldado1 {
+        internal static System.Drawing.Bitmap Submenu {
             get {
-                object obj = ResourceManager.GetObject("Soldado1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Soldado2 {
-            get {
-                object obj = ResourceManager.GetObject("Soldado2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap tache_1 {
-            get {
-                object obj = ResourceManager.GetObject("tache-1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap tache_11 {
-            get {
-                object obj = ResourceManager.GetObject("tache-11", resourceCulture);
+                object obj = ResourceManager.GetObject("Submenu", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

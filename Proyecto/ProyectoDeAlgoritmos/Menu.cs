@@ -16,7 +16,7 @@ namespace ProyectoDeAlgoritmos
         public Menu()
         {
             InitializeComponent();
-            BtnEscritorio.BackColor = Color.FromArgb(191, 42, 42);
+            EscritorioBtn.BackColor = Color.FromArgb(191, 42, 42);
         
  
         }
@@ -53,25 +53,117 @@ namespace ProyectoDeAlgoritmos
 
         private void BtnSoldier_Click(object sender, EventArgs e)
         {
-            BtnSoldier.BackColor = Color.FromArgb(191, 42, 42);
-            SoldierMenu Soldados = new SoldierMenu();
-            Soldados.Show();
-            Soldados.BtnSoldier.BackColor = Color.FromArgb(191, 42, 42);
-            this.Hide();
+           
+      
         }
 
         private void BtnAll_Click(object sender, EventArgs e)
         {
-            BtnAll.BackColor = Color.FromArgb(191, 42, 42);
+         
         }
 
         private void Iniciar_Click(object sender, EventArgs e)
         {
-            BtnScarecrow.BackColor = Color.FromArgb(191, 42, 42);
-            ScarecrowMenu Espantapajaros = new ScarecrowMenu();
-            Espantapajaros.Show();
-            Espantapajaros.BtnScarecrow3.BackColor = Color.FromArgb(191, 42, 42);
-            this.Hide();
+
+        }
+
+        private void EscomImg_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuFlatButton3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnEscritorio_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnSoldier_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
+            if(panel1.Width == 40)
+            {
+                panel3.Left = 230;
+                panel1.Visible = false;
+                panel1.Width = 200;
+                PanelAnimacion.ShowSync(panel1);
+            }
+            else
+            {
+                panel3.Left = 100;
+                panel1.Visible = false;
+                panel1.Width = 40;
+                PanelAnimacion.ShowSync(panel1);
+            }
+        }
+
+        private void IPNimg_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DesarrGre_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void EquipoJava_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        public void BtnSoldier_Click_2(object sender, EventArgs e)
+        {
+            controlSoldados2.BringToFront();
+            controlSoldados2.OcultarCapas();
+        }
+
+        private void BtnAll_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        public void bunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+             controlEscritorio1.BringToFront();
+        }
+
+        public void BtnScarecrow_Click(object sender, EventArgs e)
+        {
+            controlScarecrow2.BringToFront();
+        }
+
+        private void controlScarecrow1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuGradientPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void controlEscritorio1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -50,11 +50,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ScarecrowMenu.cs">
-      <SubType>Form</SubType>
+    <Compile Include="comparacionSoldados.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ScarecrowMenu.Designer.cs">
-      <DependentUpon>ScarecrowMenu.cs</DependentUpon>
+    <Compile Include="comparacionSoldados.Designer.cs">
+      <DependentUpon>comparacionSoldados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="controlEscritorio.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controlEscritorio.Designer.cs">
+      <DependentUpon>controlEscritorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="controlScarecrow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controlScarecrow.Designer.cs">
+      <DependentUpon>controlScarecrow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlSoldados.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlSoldados.Designer.cs">
+      <DependentUpon>ControlSoldados.cs</DependentUpon>
     </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
@@ -64,35 +82,44 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SoldierMenu.cs">
-      <SubType>Form</SubType>
+    <Compile Include="seleccionarSoldados.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="SoldierMenu.Designer.cs">
-      <DependentUpon>SoldierMenu.cs</DependentUpon>
+    <Compile Include="seleccionarSoldados.Designer.cs">
+      <DependentUpon>seleccionarSoldados.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="comparacionSoldados.resx">
+      <DependentUpon>comparacionSoldados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controlEscritorio.resx">
+      <DependentUpon>controlEscritorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controlScarecrow.resx">
+      <DependentUpon>controlScarecrow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlSoldados.resx">
+      <DependentUpon>ControlSoldados.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
-    <EmbeddedResource Include="ScarecrowMenu.resx">
-      <DependentUpon>ScarecrowMenu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SoldierMenu.resx">
-      <DependentUpon>SoldierMenu.cs</DependentUpon>
+    <EmbeddedResource Include="seleccionarSoldados.resx">
+      <DependentUpon>seleccionarSoldados.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -109,31 +136,22 @@
     <None Include="Resources\escom.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Submenu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apagar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apagar1.png" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\Soldado.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\blue_home_house_12608.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\scarecrow-576497_640.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\tache-1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Paisaje-en-8-bits-imagenes-minimalistas-1920x1200-730x412.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\32E64C905.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Militar.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\EspantapajaroF.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\botonM.jpg" />
+    <None Include="Resources\Espantapajaro.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

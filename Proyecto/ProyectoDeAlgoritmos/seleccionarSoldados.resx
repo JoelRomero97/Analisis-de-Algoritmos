@@ -117,26 +117,25 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="apagar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\apagar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="escom" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\escom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ipn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ipn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="apagar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\apagar1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Submenu" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Submenu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Soldado" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Soldado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Espantapajaro" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Espantapajaro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="bunifuThinButton21.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAMAAAAAzCAYAAADB2gewAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANNSURBVHhe7d2hUxtBGIZxHA6Hw+FwOBwOh8PhcDgcDofD
+        4XA4HA6HwzEFmkIhpYX8J9t5trOZ5LiES0JncruP+A0JOQhi37tvd78LC71eL0ilMgAqmgFQ0QyAimYA
+        VDQDoKLNHICbm7dwfPwSDg6ew9bWj7Cx0QkrK/dhYeGb9KUYV4yvzc1OHG+Hh8/h+vpP7bhsaqoAMOj3
+        93+G1dWH+Eft7j7FP+js7Fe4uHiNr9f9nDQLxhXj6/z8NY636hi8vPxd+3PjTBSA29u3+Ea84VekT/oK
+        qQpZX/8eq5BJTsCNA0DiGPi8Ud3r0jygCmGc7u09hW73vfaYQZ8GoNN5j6kiAE1+oTQPjo5e4nyBqqXu
+        9WRsALiU8EtIVd3r0jxjTkBZdHU1em4wMgAM/rW18T8szbt0Eh81jmsDQNlDcpzkKgeUQYznuslxbQBY
+        Z2Wpqe41qY24AhCC6jz2QwBYW2WJs/p9qe1OT7the/tx6HtDAeBSwRKSqz3KVXVeOxSAnZ3HcHLS7T+X
+        csNOMpPi9LwfAFJBOtJzKVfsa6Wl/X4A2Dlj8yA9l3LFAg8LPTzuB4Daf5IeCqmtmOMuLd3FrzEArPfT
+        VVc9UMoVq0GsCsUAUPpQAlUPknLFYg+LPjEAtDjb5amSpNWgGAB3flUa5rvMe2MAeGDTm0rCBHhx8e5f
+        AJgR2/im0sR7jXlALURNVD1AytVQCWQLhEqTbpaJAeB2R1QPknKVdoNjAKoNQlLu0tJ/DAAz4uXl+3gn
+        WPVAKUep9ScGAGlrePAgKUep/udxPwC0h9Immp5LuRrsfO4HAH4KhHJXvetxKACDlwYpR4M3w2AoAKge
+        IOWi7q7HDwFgJYiDvDlGORk1rj8EAPQFUQq5LKocUO+z6VXX7lMbAKSdMkOgNmPwj2v1GRkAMBdgh9hy
+        SG3EyZuT+Lg+t7EBQJo42C2qNmk6bj8NAEgSVwJWiLxvQPOMdX5KnqYLOY0CkFAS8ekRvIEbZponnJj5
+        XFs2uSZp7Z8oAAlvQMJooKOrjgnzNP+gTJoWJ2DKG9oaOCmDD3VOO7xNTRWAhMsNLaVMNOLNBZV/ayn9
+        L5yAKcvp6ZmlLJ8pAFLbGQAVzQCoaAZARTMAKlgv/AXY85vam29rMQAAAABJRU5ErkJggg==
+</value>
   </data>
 </root>
