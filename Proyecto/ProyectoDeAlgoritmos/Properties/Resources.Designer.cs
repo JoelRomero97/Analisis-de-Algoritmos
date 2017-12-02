@@ -113,6 +113,26 @@ namespace ProyectoDeAlgoritmos.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Sand1 {
+            get {
+                object obj = ResourceManager.GetObject("Sand1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sand11 {
+            get {
+                object obj = ResourceManager.GetObject("Sand11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Soldado {
             get {
                 object obj = ResourceManager.GetObject("Soldado", resourceCulture);

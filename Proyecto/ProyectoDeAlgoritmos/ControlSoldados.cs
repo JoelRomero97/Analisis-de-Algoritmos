@@ -21,9 +21,9 @@ namespace ProyectoDeAlgoritmos
             seleccionarSoldados1.Visible = false;
         }
         public void IniciarSoldados_Click(object sender, EventArgs e)
-        {
-            seleccionarSoldados1.OcultarCapaComp();
+        {   
             seleccionarSoldados1.Visible = true;
+            seleccionarSoldados1.OcultarCapaComp();
         }
 
         public void seleccionarSoldados1_Load(object sender, EventArgs e)

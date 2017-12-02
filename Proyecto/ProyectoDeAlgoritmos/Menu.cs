@@ -149,6 +149,7 @@ namespace ProyectoDeAlgoritmos
         public void BtnScarecrow_Click(object sender, EventArgs e)
         {
             controlScarecrow2.BringToFront();
+            controlScarecrow2.OcultarCapas();
         }
 
         private void controlScarecrow1_Load(object sender, EventArgs e)
@@ -157,11 +158,6 @@ namespace ProyectoDeAlgoritmos
         }
 
         private void bunifuGradientPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void controlEscritorio1_Load(object sender, EventArgs e)
         {
 
         }

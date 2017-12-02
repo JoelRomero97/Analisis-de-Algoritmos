@@ -35,6 +35,9 @@
     <Reference Include="Bunifu_UI_v1.5.3">
       <HintPath>..\..\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
+    <Reference Include="Control.Draggable, Version=1.0.5049.269, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Control.Draggable.1.0.5049.269\lib\net35-Client\Control.Draggable.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -50,6 +53,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="comparacionScarecrow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="comparacionScarecrow.Designer.cs">
+      <DependentUpon>comparacionScarecrow.cs</DependentUpon>
+    </Compile>
     <Compile Include="comparacionSoldados.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -88,6 +97,15 @@
     <Compile Include="seleccionarSoldados.Designer.cs">
       <DependentUpon>seleccionarSoldados.cs</DependentUpon>
     </Compile>
+    <Compile Include="seleccionScarecrow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="seleccionScarecrow.Designer.cs">
+      <DependentUpon>seleccionScarecrow.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="comparacionScarecrow.resx">
+      <DependentUpon>comparacionScarecrow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="comparacionSoldados.resx">
       <DependentUpon>comparacionSoldados.cs</DependentUpon>
     </EmbeddedResource>
@@ -111,6 +129,10 @@
     <EmbeddedResource Include="seleccionarSoldados.resx">
       <DependentUpon>seleccionarSoldados.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="seleccionScarecrow.resx">
+      <DependentUpon>seleccionScarecrow.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -152,6 +174,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Espantapajaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sand1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

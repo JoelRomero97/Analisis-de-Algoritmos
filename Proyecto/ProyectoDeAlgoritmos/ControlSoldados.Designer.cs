@@ -32,7 +32,7 @@
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.IniciarSoldados = new Bunifu.Framework.UI.BunifuThinButton2();
             this.seleccionarSoldados1 = new ProyectoDeAlgoritmos.seleccionarSoldados();
-            this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.SuspendLayout();
             // 
             // bunifuCustomLabel1
@@ -82,16 +82,16 @@
             this.seleccionarSoldados1.Visible = false;
             this.seleccionarSoldados1.Load += new System.EventHandler(this.seleccionarSoldados1_Load);
             // 
-            // bunifuCustomLabel4
+            // bunifuCustomLabel2
             // 
-            this.bunifuCustomLabel4.AutoSize = true;
-            this.bunifuCustomLabel4.Font = new System.Drawing.Font("Segoe UI Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuCustomLabel4.Location = new System.Drawing.Point(41, 507);
-            this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
-            this.bunifuCustomLabel4.Size = new System.Drawing.Size(794, 13);
-            this.bunifuCustomLabel4.TabIndex = 22;
-            this.bunifuCustomLabel4.Text = "Juan de Dios Bátiz, Ciudad de México,  ESCOM IPN © 2017                          " +
+            this.bunifuCustomLabel2.AutoSize = true;
+            this.bunifuCustomLabel2.Font = new System.Drawing.Font("Segoe UI Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(20, 507);
+            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(794, 13);
+            this.bunifuCustomLabel2.TabIndex = 23;
+            this.bunifuCustomLabel2.Text = "Juan de Dios Bátiz, Ciudad de México,  ESCOM IPN © 2017                          " +
     "                Alan Ernesto González Barrios  |  Joel Mauricio Romero Gamarra  " +
     "|  René Zavala Pérez";
             // 
@@ -100,10 +100,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Controls.Add(this.bunifuCustomLabel4);
             this.Controls.Add(this.seleccionarSoldados1);
             this.Controls.Add(this.IniciarSoldados);
             this.Controls.Add(this.bunifuCustomLabel1);
+            this.Controls.Add(this.bunifuCustomLabel2);
             this.Name = "ControlSoldados";
             this.Size = new System.Drawing.Size(853, 532);
             this.ResumeLayout(false);
@@ -116,6 +116,6 @@
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         public Bunifu.Framework.UI.BunifuThinButton2 IniciarSoldados;
         private seleccionarSoldados seleccionarSoldados1;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel4;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
     }
 }

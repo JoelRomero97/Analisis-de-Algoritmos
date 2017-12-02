@@ -30,11 +30,11 @@
         {
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.TiempoGreedy = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.TiempoFB = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.SuspendLayout();
             // 
@@ -51,38 +51,32 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(215)))), ((int)(((byte)(215)))));
             this.panel1.Location = new System.Drawing.Point(49, 102);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(356, 352);
+            this.panel1.Size = new System.Drawing.Size(767, 113);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(460, 102);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(356, 352);
-            this.flowLayoutPanel1.TabIndex = 2;
             // 
             // bunifuCustomLabel2
             // 
             this.bunifuCustomLabel2.AutoSize = true;
-            this.bunifuCustomLabel2.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel2.Font = new System.Drawing.Font("Segoe UI Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(159, 72);
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(44, 72);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(58, 21);
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(71, 25);
             this.bunifuCustomLabel2.TabIndex = 3;
             this.bunifuCustomLabel2.Text = "Greedy";
             // 
             // bunifuCustomLabel3
             // 
             this.bunifuCustomLabel3.AutoSize = true;
-            this.bunifuCustomLabel3.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel3.Font = new System.Drawing.Font("Segoe UI Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuCustomLabel3.Location = new System.Drawing.Point(578, 72);
+            this.bunifuCustomLabel3.Location = new System.Drawing.Point(44, 267);
             this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
-            this.bunifuCustomLabel3.Size = new System.Drawing.Size(94, 21);
+            this.bunifuCustomLabel3.Size = new System.Drawing.Size(112, 25);
             this.bunifuCustomLabel3.TabIndex = 4;
             this.bunifuCustomLabel3.Text = "Fuerza Bruta";
             this.bunifuCustomLabel3.Click += new System.EventHandler(this.bunifuCustomLabel3_Click);
@@ -92,7 +86,7 @@
             this.TiempoGreedy.AutoSize = true;
             this.TiempoGreedy.Font = new System.Drawing.Font("Segoe UI Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TiempoGreedy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.TiempoGreedy.Location = new System.Drawing.Point(44, 470);
+            this.TiempoGreedy.Location = new System.Drawing.Point(44, 231);
             this.TiempoGreedy.Name = "TiempoGreedy";
             this.TiempoGreedy.Size = new System.Drawing.Size(83, 25);
             this.TiempoGreedy.TabIndex = 7;
@@ -103,21 +97,29 @@
             this.TiempoFB.AutoSize = true;
             this.TiempoFB.Font = new System.Drawing.Font("Segoe UI Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TiempoFB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.TiempoFB.Location = new System.Drawing.Point(465, 470);
+            this.TiempoFB.Location = new System.Drawing.Point(44, 436);
             this.TiempoFB.Name = "TiempoFB";
             this.TiempoFB.Size = new System.Drawing.Size(83, 25);
             this.TiempoFB.TabIndex = 8;
             this.TiempoFB.Text = "Tiempo: ";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(215)))), ((int)(((byte)(215)))));
+            this.panel2.Location = new System.Drawing.Point(49, 304);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(767, 113);
+            this.panel2.TabIndex = 10;
             // 
             // bunifuCustomLabel4
             // 
             this.bunifuCustomLabel4.AutoSize = true;
             this.bunifuCustomLabel4.Font = new System.Drawing.Font("Segoe UI Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuCustomLabel4.Location = new System.Drawing.Point(41, 507);
+            this.bunifuCustomLabel4.Location = new System.Drawing.Point(20, 507);
             this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
             this.bunifuCustomLabel4.Size = new System.Drawing.Size(794, 13);
-            this.bunifuCustomLabel4.TabIndex = 22;
+            this.bunifuCustomLabel4.TabIndex = 23;
             this.bunifuCustomLabel4.Text = "Juan de Dios Bátiz, Ciudad de México,  ESCOM IPN © 2017                          " +
     "                Alan Ernesto González Barrios  |  Joel Mauricio Romero Gamarra  " +
     "|  René Zavala Pérez";
@@ -128,15 +130,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Controls.Add(this.bunifuCustomLabel4);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.TiempoFB);
             this.Controls.Add(this.TiempoGreedy);
             this.Controls.Add(this.bunifuCustomLabel3);
             this.Controls.Add(this.bunifuCustomLabel2);
-            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.bunifuCustomLabel1);
             this.Name = "comparacionSoldados";
             this.Size = new System.Drawing.Size(853, 532);
+            this.Load += new System.EventHandler(this.comparacionSoldados_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -146,11 +149,11 @@
 
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel3;
         private Bunifu.Framework.UI.BunifuCustomLabel TiempoGreedy;
         private Bunifu.Framework.UI.BunifuCustomLabel TiempoFB;
+        private System.Windows.Forms.Panel panel2;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel4;
     }
 }

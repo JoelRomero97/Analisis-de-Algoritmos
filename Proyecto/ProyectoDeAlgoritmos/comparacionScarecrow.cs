@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace ProyectoDeAlgoritmos
 {
-    public partial class controlEscritorio : UserControl
+    public partial class comparacionScarecrow : UserControl
     {
-        public controlEscritorio()
+        public comparacionScarecrow()
         {
             InitializeComponent();
+        }
+
+        private void comparacionScarecrow_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

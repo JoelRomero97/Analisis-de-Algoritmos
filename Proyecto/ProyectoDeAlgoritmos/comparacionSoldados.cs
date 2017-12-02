@@ -31,5 +31,10 @@ namespace ProyectoDeAlgoritmos
         {
 
         }
+
+        private void comparacionSoldados_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

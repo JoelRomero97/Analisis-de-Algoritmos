@@ -24,12 +24,20 @@ namespace ProyectoDeAlgoritmos
 
         private void InicioScarecrow_Click(object sender, EventArgs e)
         {
+            seleccionScarecrow1.Visible = true;
+            seleccionScarecrow1.OcultarCapaCom();
+        }
+
+
+
+        private void seleccionScarecrow1_Load(object sender, EventArgs e)
+        {
 
         }
 
-        private void controlScarecrow_Load(object sender, EventArgs e)
+        public void OcultarCapas()
         {
-
+            seleccionScarecrow1.Visible = false;
         }
     }
 }

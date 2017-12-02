@@ -80,9 +80,9 @@
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label4.Location = new System.Drawing.Point(263, 104);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(353, 37);
+            this.label4.Size = new System.Drawing.Size(356, 37);
             this.label4.TabIndex = 16;
-            this.label4.Text = "Analisis de Algoritmos Greedy";
+            this.label4.Text = "Analisis de Algoritmos Greedy.";
             // 
             // DesarrGre
             // 
@@ -97,8 +97,8 @@
             this.DesarrGre.Name = "DesarrGre";
             this.DesarrGre.Size = new System.Drawing.Size(526, 74);
             this.DesarrGre.TabIndex = 17;
-            this.DesarrGre.Text = "Desarrollo interactivo de algoritmos Greedy\r\nCon problemas de Espantapajaros y So" +
-    "ldados\r\n";
+            this.DesarrGre.Text = "Desarrollo interactivo de algoritmos Greedy.\r\nCon problemas de Espantapajaros y S" +
+    "oldados\r\n";
             this.DesarrGre.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox1
@@ -118,14 +118,13 @@
             this.bunifuCustomLabel4.AutoSize = true;
             this.bunifuCustomLabel4.Font = new System.Drawing.Font("Segoe UI Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuCustomLabel4.Location = new System.Drawing.Point(41, 507);
+            this.bunifuCustomLabel4.Location = new System.Drawing.Point(20, 507);
             this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
             this.bunifuCustomLabel4.Size = new System.Drawing.Size(794, 13);
-            this.bunifuCustomLabel4.TabIndex = 21;
+            this.bunifuCustomLabel4.TabIndex = 23;
             this.bunifuCustomLabel4.Text = "Juan de Dios Bátiz, Ciudad de México,  ESCOM IPN © 2017                          " +
     "                Alan Ernesto González Barrios  |  Joel Mauricio Romero Gamarra  " +
     "|  René Zavala Pérez";
-            this.bunifuCustomLabel4.Click += new System.EventHandler(this.bunifuCustomLabel4_Click);
             // 
             // controlEscritorio
             // 
