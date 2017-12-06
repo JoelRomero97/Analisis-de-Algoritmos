@@ -34,6 +34,8 @@ Opciones para "Algoritmo_Seleccionado":
 - 5 para Shell Sort
 - 6 para Binary Tree Sort
 
-# Autor
+# Autores
 
-Joel Mauricio Romero Gamarra
+- Alan Ernesto González Barrios
+- Joel Mauricio Romero Gamarra
+- René Zavala Pérez
