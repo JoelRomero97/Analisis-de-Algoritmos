@@ -36,6 +36,8 @@ Opciones para "Algoritmo_Seleccionado":
 
 # Autores
 
-- Alan Ernesto González Barrios
-- Joel Mauricio Romero Gamarra
-- René Zavala Pérez
+Alan Ernesto González Barrios
+
+Joel Mauricio Romero Gamarra
+
+René Zavala Pérez
