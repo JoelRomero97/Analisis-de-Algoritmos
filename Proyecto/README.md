@@ -16,5 +16,5 @@ Para ambos algoritmos, la aplicación es interactiva, permitiendo al usuario gen
 
 # Autores
 
-- Joel Mauricio Romero Gamarra
-- René Zavala Pérez
+Joel Mauricio Romero Gamarra
+René Zavala Pérez
