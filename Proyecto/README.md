@@ -4,6 +4,7 @@ Los algoritmos ávidos o voraces (Greedy) son algoritmos que toman decisiones de
 
 En este caso, se analizan los siguientes problemas:
 
+- [Scarecrow](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=657&page=show_problem&problem=3836): Minimizar el número de espantapájaros para proteger un terreno de 1 x N
 - Scarecrow: Minimizar el número de espantapájaros para proteger un terreno de 1 x N
 - Bear and Row 01: Maximizar el tiempo en el que los soldados se forman a la derecha de la fila.
 
