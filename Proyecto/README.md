@@ -9,9 +9,10 @@ En este caso, se analizan los siguientes problemas:
 
 Para ambos algoritmos, la aplicación es interactiva, permitiendo al usuario generar las cadenas a ejecutar, posteriormente, se muestra la animación que muestra el tiempo que tarda resolver el mismo problema utilizando Fuerza Bruta y un Algoritmo Greedy.
 
-# Tecnologías utilizadas
+# Tecnologías
 
-- Visual Studio 2017
+- Visual Studio 2017: IDE
+- Bunifu: .NET UI Framework
 
 # Autores
 
