@@ -13,6 +13,7 @@ Para ambos algoritmos, la aplicación es interactiva, permitiendo al usuario gen
 
 - Visual Studio 2017: IDE
 - Bunifu: .NET UI Framework
+- MATLAB R2016a: Graficador
 
 # Autores
 
