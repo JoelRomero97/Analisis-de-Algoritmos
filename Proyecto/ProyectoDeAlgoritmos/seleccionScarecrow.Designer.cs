@@ -41,10 +41,10 @@
             this.panelImagen15 = new System.Windows.Forms.PictureBox();
             this.panelImagen17 = new System.Windows.Forms.PictureBox();
             this.panelImagen14 = new System.Windows.Forms.PictureBox();
-            this.BtnCompararScarecrow = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.pictureSeco = new System.Windows.Forms.PictureBox();
+            this.BtnCompararScarecrow = new Bunifu.Framework.UI.BunifuThinButton2();
             this.picturePasto = new System.Windows.Forms.PictureBox();
+            this.pictureSeco = new System.Windows.Forms.PictureBox();
             this.comparacionScarecrow1 = new ProyectoDeAlgoritmos.comparacionScarecrow();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelImagen20)).BeginInit();
@@ -57,8 +57,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelImagen15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelImagen17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelImagen14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureSeco)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picturePasto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureSeco)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuCustomLabel1
@@ -68,9 +68,9 @@
             this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bunifuCustomLabel1.Location = new System.Drawing.Point(13, 18);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(274, 32);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(176, 32);
             this.bunifuCustomLabel1.TabIndex = 0;
-            this.bunifuCustomLabel1.Text = "Siembra un poco de maíz";
+            this.bunifuCustomLabel1.Text = "Siembra el maíz";
             // 
             // panel1
             // 
@@ -86,17 +86,18 @@
             this.panel1.Controls.Add(this.panelImagen17);
             this.panel1.Controls.Add(this.panelImagen14);
             this.panel1.ForeColor = System.Drawing.Color.Black;
-            this.panel1.Location = new System.Drawing.Point(15, 270);
+            this.panel1.Location = new System.Drawing.Point(15, 290);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(807, 124);
             this.panel1.TabIndex = 2;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panelImagen20
             // 
             this.panelImagen20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelImagen20.Location = new System.Drawing.Point(731, 33);
             this.panelImagen20.Name = "panelImagen20";
-            this.panelImagen20.Size = new System.Drawing.Size(60, 55);
+            this.panelImagen20.Size = new System.Drawing.Size(60, 65);
             this.panelImagen20.TabIndex = 35;
             this.panelImagen20.TabStop = false;
             this.panelImagen20.Click += new System.EventHandler(this.panelImagen20_Click);
@@ -108,7 +109,7 @@
             this.panelImagen16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelImagen16.Location = new System.Drawing.Point(411, 33);
             this.panelImagen16.Name = "panelImagen16";
-            this.panelImagen16.Size = new System.Drawing.Size(60, 55);
+            this.panelImagen16.Size = new System.Drawing.Size(60, 65);
             this.panelImagen16.TabIndex = 32;
             this.panelImagen16.TabStop = false;
             this.panelImagen16.Click += new System.EventHandler(this.panelImagen16_Click);
@@ -120,7 +121,7 @@
             this.panelImagen19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelImagen19.Location = new System.Drawing.Point(651, 33);
             this.panelImagen19.Name = "panelImagen19";
-            this.panelImagen19.Size = new System.Drawing.Size(60, 55);
+            this.panelImagen19.Size = new System.Drawing.Size(60, 65);
             this.panelImagen19.TabIndex = 34;
             this.panelImagen19.TabStop = false;
             this.panelImagen19.Click += new System.EventHandler(this.panelImagen19_Click);
@@ -132,7 +133,7 @@
             this.panelImagen11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelImagen11.Location = new System.Drawing.Point(11, 33);
             this.panelImagen11.Name = "panelImagen11";
-            this.panelImagen11.Size = new System.Drawing.Size(60, 55);
+            this.panelImagen11.Size = new System.Drawing.Size(60, 65);
             this.panelImagen11.TabIndex = 26;
             this.panelImagen11.TabStop = false;
             this.panelImagen11.Click += new System.EventHandler(this.panelImagen11_Click);
@@ -144,7 +145,7 @@
             this.panelImagen18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelImagen18.Location = new System.Drawing.Point(571, 33);
             this.panelImagen18.Name = "panelImagen18";
-            this.panelImagen18.Size = new System.Drawing.Size(60, 55);
+            this.panelImagen18.Size = new System.Drawing.Size(60, 65);
             this.panelImagen18.TabIndex = 33;
             this.panelImagen18.TabStop = false;
             this.panelImagen18.Click += new System.EventHandler(this.panelImagen18_Click);
@@ -156,7 +157,7 @@
             this.panelImagen12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelImagen12.Location = new System.Drawing.Point(91, 33);
             this.panelImagen12.Name = "panelImagen12";
-            this.panelImagen12.Size = new System.Drawing.Size(60, 55);
+            this.panelImagen12.Size = new System.Drawing.Size(60, 65);
             this.panelImagen12.TabIndex = 27;
             this.panelImagen12.TabStop = false;
             this.panelImagen12.Click += new System.EventHandler(this.panelImagen12_Click);
@@ -168,7 +169,7 @@
             this.panelImagen13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelImagen13.Location = new System.Drawing.Point(171, 33);
             this.panelImagen13.Name = "panelImagen13";
-            this.panelImagen13.Size = new System.Drawing.Size(60, 55);
+            this.panelImagen13.Size = new System.Drawing.Size(60, 65);
             this.panelImagen13.TabIndex = 28;
             this.panelImagen13.TabStop = false;
             this.panelImagen13.Click += new System.EventHandler(this.panelImagen13_Click);
@@ -180,7 +181,7 @@
             this.panelImagen15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelImagen15.Location = new System.Drawing.Point(331, 33);
             this.panelImagen15.Name = "panelImagen15";
-            this.panelImagen15.Size = new System.Drawing.Size(60, 55);
+            this.panelImagen15.Size = new System.Drawing.Size(60, 65);
             this.panelImagen15.TabIndex = 31;
             this.panelImagen15.TabStop = false;
             this.panelImagen15.Click += new System.EventHandler(this.panelImagen15_Click);
@@ -192,7 +193,7 @@
             this.panelImagen17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelImagen17.Location = new System.Drawing.Point(491, 33);
             this.panelImagen17.Name = "panelImagen17";
-            this.panelImagen17.Size = new System.Drawing.Size(60, 55);
+            this.panelImagen17.Size = new System.Drawing.Size(60, 65);
             this.panelImagen17.TabIndex = 29;
             this.panelImagen17.TabStop = false;
             this.panelImagen17.Click += new System.EventHandler(this.panelImagen17_Click);
@@ -204,12 +205,25 @@
             this.panelImagen14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelImagen14.Location = new System.Drawing.Point(251, 33);
             this.panelImagen14.Name = "panelImagen14";
-            this.panelImagen14.Size = new System.Drawing.Size(60, 55);
+            this.panelImagen14.Size = new System.Drawing.Size(60, 65);
             this.panelImagen14.TabIndex = 30;
             this.panelImagen14.TabStop = false;
             this.panelImagen14.Click += new System.EventHandler(this.panelImagen14_Click);
             this.panelImagen14.DragDrop += new System.Windows.Forms.DragEventHandler(this.panelImagen14_DragDrop);
             this.panelImagen14.DragEnter += new System.Windows.Forms.DragEventHandler(this.panelImagen14_DragEnter);
+            // 
+            // bunifuCustomLabel4
+            // 
+            this.bunifuCustomLabel4.AutoSize = true;
+            this.bunifuCustomLabel4.Font = new System.Drawing.Font("Segoe UI Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.bunifuCustomLabel4.Location = new System.Drawing.Point(20, 507);
+            this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
+            this.bunifuCustomLabel4.Size = new System.Drawing.Size(794, 13);
+            this.bunifuCustomLabel4.TabIndex = 23;
+            this.bunifuCustomLabel4.Text = "Juan de Dios Bátiz, Ciudad de México,  ESCOM IPN © 2017                          " +
+    "                Alan Ernesto González Barrios  |  Joel Mauricio Romero Gamarra  " +
+    "|  René Zavala Pérez";
             // 
             // BtnCompararScarecrow
             // 
@@ -230,7 +244,7 @@
             this.BtnCompararScarecrow.IdleForecolor = System.Drawing.Color.MediumBlue;
             this.BtnCompararScarecrow.IdleLineColor = System.Drawing.Color.MediumBlue;
             this.BtnCompararScarecrow.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.BtnCompararScarecrow.Location = new System.Drawing.Point(334, 411);
+            this.BtnCompararScarecrow.Location = new System.Drawing.Point(334, 445);
             this.BtnCompararScarecrow.Margin = new System.Windows.Forms.Padding(5);
             this.BtnCompararScarecrow.Name = "BtnCompararScarecrow";
             this.BtnCompararScarecrow.Size = new System.Drawing.Size(192, 51);
@@ -238,18 +252,19 @@
             this.BtnCompararScarecrow.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.BtnCompararScarecrow.Click += new System.EventHandler(this.bunifuThinButton21_Click);
             // 
-            // bunifuCustomLabel4
+            // picturePasto
             // 
-            this.bunifuCustomLabel4.AutoSize = true;
-            this.bunifuCustomLabel4.Font = new System.Drawing.Font("Segoe UI Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuCustomLabel4.Location = new System.Drawing.Point(20, 507);
-            this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
-            this.bunifuCustomLabel4.Size = new System.Drawing.Size(794, 13);
-            this.bunifuCustomLabel4.TabIndex = 23;
-            this.bunifuCustomLabel4.Text = "Juan de Dios Bátiz, Ciudad de México,  ESCOM IPN © 2017                          " +
-    "                Alan Ernesto González Barrios  |  Joel Mauricio Romero Gamarra  " +
-    "|  René Zavala Pérez";
+            this.picturePasto.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picturePasto.Image = global::ProyectoDeAlgoritmos.Properties.Resources.corn_maiz;
+            this.picturePasto.Location = new System.Drawing.Point(140, 105);
+            this.picturePasto.Name = "picturePasto";
+            this.picturePasto.Size = new System.Drawing.Size(60, 65);
+            this.picturePasto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.picturePasto.TabIndex = 25;
+            this.picturePasto.TabStop = false;
+            this.picturePasto.Click += new System.EventHandler(this.picturePasto_Click);
+            this.picturePasto.MouseDown += new System.Windows.Forms.MouseEventHandler(this.picturePasto_MouseDown);
+            this.picturePasto.MouseMove += new System.Windows.Forms.MouseEventHandler(this.picturePasto_MouseMove);
             // 
             // pictureSeco
             // 
@@ -257,25 +272,13 @@
             this.pictureSeco.Image = ((System.Drawing.Image)(resources.GetObject("pictureSeco.Image")));
             this.pictureSeco.Location = new System.Drawing.Point(529, 114);
             this.pictureSeco.Name = "pictureSeco";
-            this.pictureSeco.Size = new System.Drawing.Size(77, 56);
+            this.pictureSeco.Size = new System.Drawing.Size(98, 65);
             this.pictureSeco.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureSeco.TabIndex = 24;
             this.pictureSeco.TabStop = false;
+            this.pictureSeco.Click += new System.EventHandler(this.pictureSeco_Click);
             this.pictureSeco.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureSeco_MouseDown);
             this.pictureSeco.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureSeco_MouseMove);
-            // 
-            // picturePasto
-            // 
-            this.picturePasto.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picturePasto.Image = ((System.Drawing.Image)(resources.GetObject("picturePasto.Image")));
-            this.picturePasto.Location = new System.Drawing.Point(138, 114);
-            this.picturePasto.Name = "picturePasto";
-            this.picturePasto.Size = new System.Drawing.Size(77, 56);
-            this.picturePasto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.picturePasto.TabIndex = 25;
-            this.picturePasto.TabStop = false;
-            this.picturePasto.MouseDown += new System.Windows.Forms.MouseEventHandler(this.picturePasto_MouseDown);
-            this.picturePasto.MouseMove += new System.Windows.Forms.MouseEventHandler(this.picturePasto_MouseMove);
             // 
             // comparacionScarecrow1
             // 
@@ -313,8 +316,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelImagen15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelImagen17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelImagen14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureSeco)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picturePasto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureSeco)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

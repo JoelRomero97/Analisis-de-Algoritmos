@@ -36,5 +36,16 @@ namespace ProyectoDeAlgoritmos
         {
 
         }
+
+        public void RecibirCadena(String numSoldados)
+        {
+            int tam;
+            tam = numSoldados.Length;
+            char[] Fila;
+            Fila = new char[tam];
+            Fila = numSoldados.ToCharArray();
+
+            
+        }
     }
 }

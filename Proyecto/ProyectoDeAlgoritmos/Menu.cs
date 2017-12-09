@@ -134,6 +134,7 @@ namespace ProyectoDeAlgoritmos
         {
             controlSoldados2.BringToFront();
             controlSoldados2.OcultarCapas();
+            controlSoldados2.ReinicioPanel();
         }
 
         private void BtnAll_Click_1(object sender, EventArgs e)
@@ -150,6 +151,8 @@ namespace ProyectoDeAlgoritmos
         {
             controlScarecrow2.BringToFront();
             controlScarecrow2.OcultarCapas();
+            controlScarecrow2.ReinicioPanel();
+            
         }
 
         private void controlScarecrow1_Load(object sender, EventArgs e)

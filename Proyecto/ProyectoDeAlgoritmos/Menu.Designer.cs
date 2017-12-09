@@ -34,6 +34,10 @@
             this.doubleBitmapControl1 = new BunifuAnimatorNS.DoubleBitmapControl();
             this.PanelAnimacion = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.controlEscritorio1 = new ProyectoDeAlgoritmos.controlEscritorio();
+            this.controlSoldados2 = new ProyectoDeAlgoritmos.ControlSoldados();
+            this.controlScarecrow2 = new ProyectoDeAlgoritmos.controlScarecrow();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.EscomImg = new System.Windows.Forms.PictureBox();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
@@ -41,15 +45,11 @@
             this.EscritorioBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.BtnScarecrow = new Bunifu.Framework.UI.BunifuFlatButton();
             this.BtnSoldier = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.controlEscritorio1 = new ProyectoDeAlgoritmos.controlEscritorio();
-            this.controlSoldados2 = new ProyectoDeAlgoritmos.ControlSoldados();
-            this.controlScarecrow2 = new ProyectoDeAlgoritmos.controlScarecrow();
             this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.EscomImg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
-            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // doubleBitmapControl1
@@ -74,7 +74,7 @@
             animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
             animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
             animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            animation1.Padding = new System.Windows.Forms.Padding(0);
             animation1.RotateCoeff = 0F;
             animation1.RotateLimit = 0F;
             animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
@@ -95,6 +95,49 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(210, 532);
             this.panel1.TabIndex = 7;
+            // 
+            // panel3
+            // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel3.Controls.Add(this.controlEscritorio1);
+            this.panel3.Controls.Add(this.controlSoldados2);
+            this.panel3.Controls.Add(this.controlScarecrow2);
+            this.PanelAnimacion.SetDecoration(this.panel3, BunifuAnimatorNS.DecorationType.None);
+            this.panel3.Location = new System.Drawing.Point(209, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(853, 532);
+            this.panel3.TabIndex = 18;
+            this.panel3.TabStop = true;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            // 
+            // controlEscritorio1
+            // 
+            this.controlEscritorio1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.PanelAnimacion.SetDecoration(this.controlEscritorio1, BunifuAnimatorNS.DecorationType.None);
+            this.controlEscritorio1.Location = new System.Drawing.Point(0, 0);
+            this.controlEscritorio1.Name = "controlEscritorio1";
+            this.controlEscritorio1.Size = new System.Drawing.Size(853, 532);
+            this.controlEscritorio1.TabIndex = 2;
+            // 
+            // controlSoldados2
+            // 
+            this.controlSoldados2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.PanelAnimacion.SetDecoration(this.controlSoldados2, BunifuAnimatorNS.DecorationType.None);
+            this.controlSoldados2.Location = new System.Drawing.Point(0, 0);
+            this.controlSoldados2.Name = "controlSoldados2";
+            this.controlSoldados2.Size = new System.Drawing.Size(853, 532);
+            this.controlSoldados2.TabIndex = 1;
+            // 
+            // controlScarecrow2
+            // 
+            this.controlScarecrow2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.PanelAnimacion.SetDecoration(this.controlScarecrow2, BunifuAnimatorNS.DecorationType.None);
+            this.controlScarecrow2.Location = new System.Drawing.Point(0, 0);
+            this.controlScarecrow2.Name = "controlScarecrow2";
+            this.controlScarecrow2.Size = new System.Drawing.Size(853, 532);
+            this.controlScarecrow2.TabIndex = 0;
             // 
             // bunifuGradientPanel1
             // 
@@ -235,7 +278,7 @@
             this.PanelAnimacion.SetDecoration(this.BtnScarecrow, BunifuAnimatorNS.DecorationType.None);
             this.BtnScarecrow.DisabledColor = System.Drawing.Color.Gray;
             this.BtnScarecrow.Iconcolor = System.Drawing.Color.Transparent;
-            this.BtnScarecrow.Iconimage = null;
+            this.BtnScarecrow.Iconimage = global::ProyectoDeAlgoritmos.Properties.Resources.crow;
             this.BtnScarecrow.Iconimage_right = null;
             this.BtnScarecrow.Iconimage_right_Selected = null;
             this.BtnScarecrow.Iconimage_Selected = null;
@@ -244,7 +287,7 @@
             this.BtnScarecrow.IconRightVisible = true;
             this.BtnScarecrow.IconRightZoom = 0D;
             this.BtnScarecrow.IconVisible = true;
-            this.BtnScarecrow.IconZoom = 90D;
+            this.BtnScarecrow.IconZoom = 50D;
             this.BtnScarecrow.IsTab = true;
             this.BtnScarecrow.Location = new System.Drawing.Point(0, 219);
             this.BtnScarecrow.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -298,49 +341,6 @@
             this.BtnSoldier.TextFont = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSoldier.Click += new System.EventHandler(this.BtnSoldier_Click_2);
             // 
-            // panel3
-            // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel3.Controls.Add(this.controlEscritorio1);
-            this.panel3.Controls.Add(this.controlSoldados2);
-            this.panel3.Controls.Add(this.controlScarecrow2);
-            this.PanelAnimacion.SetDecoration(this.panel3, BunifuAnimatorNS.DecorationType.None);
-            this.panel3.Location = new System.Drawing.Point(209, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(853, 532);
-            this.panel3.TabIndex = 18;
-            this.panel3.TabStop = true;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
-            // 
-            // controlEscritorio1
-            // 
-            this.controlEscritorio1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.PanelAnimacion.SetDecoration(this.controlEscritorio1, BunifuAnimatorNS.DecorationType.None);
-            this.controlEscritorio1.Location = new System.Drawing.Point(0, 0);
-            this.controlEscritorio1.Name = "controlEscritorio1";
-            this.controlEscritorio1.Size = new System.Drawing.Size(853, 532);
-            this.controlEscritorio1.TabIndex = 2;
-            // 
-            // controlSoldados2
-            // 
-            this.controlSoldados2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.PanelAnimacion.SetDecoration(this.controlSoldados2, BunifuAnimatorNS.DecorationType.None);
-            this.controlSoldados2.Location = new System.Drawing.Point(0, 0);
-            this.controlSoldados2.Name = "controlSoldados2";
-            this.controlSoldados2.Size = new System.Drawing.Size(853, 532);
-            this.controlSoldados2.TabIndex = 1;
-            // 
-            // controlScarecrow2
-            // 
-            this.controlScarecrow2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.PanelAnimacion.SetDecoration(this.controlScarecrow2, BunifuAnimatorNS.DecorationType.None);
-            this.controlScarecrow2.Location = new System.Drawing.Point(0, 0);
-            this.controlScarecrow2.Name = "controlScarecrow2";
-            this.controlScarecrow2.Size = new System.Drawing.Size(853, 532);
-            this.controlScarecrow2.TabIndex = 0;
-            // 
             // Menu
             // 
             this.AllowDrop = true;
@@ -357,11 +357,11 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.Menu_Load);
             this.panel1.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.EscomImg)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
-            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

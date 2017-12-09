@@ -87,7 +87,7 @@
             this.panel1.Controls.Add(this.panelImagen2);
             this.panel1.Controls.Add(this.panelImagen1);
             this.panel1.ForeColor = System.Drawing.Color.Black;
-            this.panel1.Location = new System.Drawing.Point(15, 250);
+            this.panel1.Location = new System.Drawing.Point(15, 290);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(807, 147);
             this.panel1.TabIndex = 1;
@@ -220,7 +220,7 @@
             this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.MediumBlue;
             this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.MediumBlue;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(334, 411);
+            this.bunifuThinButton21.Location = new System.Drawing.Point(334, 445);
             this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
             this.bunifuThinButton21.Size = new System.Drawing.Size(192, 51);

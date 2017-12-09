@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel2 = new System.Windows.Forms.Panel();
             this.TiempoFB = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.TiempoGreedy = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -36,6 +37,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.TimerGreedySw = new System.Windows.Forms.Timer(this.components);
+            this.TimerFbSw = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // panel2
@@ -53,9 +56,9 @@
             this.TiempoFB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.TiempoFB.Location = new System.Drawing.Point(44, 436);
             this.TiempoFB.Name = "TiempoFB";
-            this.TiempoFB.Size = new System.Drawing.Size(83, 25);
+            this.TiempoFB.Size = new System.Drawing.Size(98, 25);
             this.TiempoFB.TabIndex = 16;
-            this.TiempoFB.Text = "Tiempo: ";
+            this.TiempoFB.Text = "Tiempo:  0";
             // 
             // TiempoGreedy
             // 
@@ -64,9 +67,9 @@
             this.TiempoGreedy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.TiempoGreedy.Location = new System.Drawing.Point(44, 231);
             this.TiempoGreedy.Name = "TiempoGreedy";
-            this.TiempoGreedy.Size = new System.Drawing.Size(83, 25);
+            this.TiempoGreedy.Size = new System.Drawing.Size(98, 25);
             this.TiempoGreedy.TabIndex = 15;
-            this.TiempoGreedy.Text = "Tiempo: ";
+            this.TiempoGreedy.Text = "Tiempo:  0";
             // 
             // bunifuCustomLabel3
             // 
@@ -122,6 +125,16 @@
     "                Alan Ernesto González Barrios  |  Joel Mauricio Romero Gamarra  " +
     "|  René Zavala Pérez";
             // 
+            // TimerGreedySw
+            // 
+            this.TimerGreedySw.Interval = 1000;
+            this.TimerGreedySw.Tick += new System.EventHandler(this.TimerGreedySw_Tick);
+            // 
+            // TimerFbSw
+            // 
+            this.TimerFbSw.Interval = 1000;
+            this.TimerFbSw.Tick += new System.EventHandler(this.TimerFbSw_Tick);
+            // 
             // comparacionScarecrow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -153,5 +166,7 @@
         private System.Windows.Forms.Panel panel1;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel4;
+        private System.Windows.Forms.Timer TimerGreedySw;
+        private System.Windows.Forms.Timer TimerFbSw;
     }
 }

@@ -39,5 +39,9 @@ namespace ProyectoDeAlgoritmos
         {
             seleccionScarecrow1.Visible = false;
         }
+        public void ReinicioPanel()
+        {
+            seleccionScarecrow1.VaciarPanel();
+        }
     }
 }

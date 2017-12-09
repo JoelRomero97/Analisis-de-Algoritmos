@@ -25,6 +25,29 @@ namespace ProyectoDeAlgoritmos
             comparacionScarecrow1.Visible = false;
         }
 
+        public void VaciarPanel()
+        {
+            panelImagen11.Image = null;
+            panelImagen12.Image = null;
+            panelImagen13.Image = null;
+            panelImagen14.Image = null;
+            panelImagen15.Image = null;
+            panelImagen16.Image = null;
+            panelImagen17.Image = null;
+            panelImagen18.Image = null;
+            panelImagen19.Image = null;
+            panelImagen20.Image = null;
+            c11 = "";
+            c12 = "";
+            c13 = "";
+            c14 = "";
+            c15 = "";
+            c16 = "";
+            c17 = "";
+            c18 = "";
+            c19 = "";
+            c20 = "";
+        }
 
 
         private void seleccionScarecrow_Load(object sender, EventArgs e)
@@ -177,6 +200,21 @@ namespace ProyectoDeAlgoritmos
 
         }
 
+        private void picturePasto_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureSeco_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void panelImagen15_DragDrop(object sender, DragEventArgs e)
         {
             Objeto_Insertado(sender, e, 15);
@@ -285,7 +323,17 @@ namespace ProyectoDeAlgoritmos
         {
             comparacionScarecrow1.Visible = true;
             cadena = c11 + c12 + c13 + c14 + c15 + c16 + c17 + c18 + c19 + c20;
-            MessageBox.Show("Cadena: " + cadena);
+            panelImagen11.Image = null;
+            panelImagen12.Image = null;
+            panelImagen13.Image = null;
+            panelImagen14.Image = null;
+            panelImagen15.Image = null;
+            panelImagen16.Image = null;
+            panelImagen17.Image = null;
+            panelImagen18.Image = null;
+            panelImagen19.Image = null;
+            panelImagen20.Image = null;
+            comparacionScarecrow1.RecibirCadena(cadena);
         }
         private void picturePasto_MouseMove(object sender, MouseEventArgs e)
         {

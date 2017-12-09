@@ -26,6 +26,10 @@ namespace ProyectoDeAlgoritmos
             seleccionarSoldados1.OcultarCapaComp();
         }
 
+        public void ReinicioPanel()
+        {
+            seleccionarSoldados1.VaciarPanel();
+        }
         public void seleccionarSoldados1_Load(object sender, EventArgs e)
         {
         

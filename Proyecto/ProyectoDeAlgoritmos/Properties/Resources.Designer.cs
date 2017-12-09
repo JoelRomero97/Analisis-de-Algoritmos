@@ -83,6 +83,36 @@ namespace ProyectoDeAlgoritmos.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap corn_306036_960_720 {
+            get {
+                object obj = ResourceManager.GetObject("corn-306036_960_720", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap corn_maiz {
+            get {
+                object obj = ResourceManager.GetObject("corn-maiz", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap crow {
+            get {
+                object obj = ResourceManager.GetObject("crow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap escom {
             get {
                 object obj = ResourceManager.GetObject("escom", resourceCulture);
@@ -133,6 +163,16 @@ namespace ProyectoDeAlgoritmos.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Scarecrow {
+            get {
+                object obj = ResourceManager.GetObject("Scarecrow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Soldado {
             get {
                 object obj = ResourceManager.GetObject("Soldado", resourceCulture);
@@ -146,6 +186,16 @@ namespace ProyectoDeAlgoritmos.Properties {
         internal static System.Drawing.Bitmap Submenu {
             get {
                 object obj = ResourceManager.GetObject("Submenu", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Tierra {
+            get {
+                object obj = ResourceManager.GetObject("Tierra", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

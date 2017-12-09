@@ -121,17 +121,8 @@
   <data name="apagar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\apagar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="escom" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\escom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Espantapajaro" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Espantapajaro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="apagar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\apagar1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Submenu" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Submenu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Scarecrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Scarecrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ipn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ipn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -139,10 +130,34 @@
   <data name="Sand1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sand1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Soldado" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Soldado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="corn-maiz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\corn-maiz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Sand11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sand1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Soldado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Soldado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tierra" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tierra.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="corn-306036_960_720" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\corn-306036_960_720.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Submenu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Submenu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="apagar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\apagar1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Espantapajaro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Espantapajaro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="escom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\escom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="crow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\crow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

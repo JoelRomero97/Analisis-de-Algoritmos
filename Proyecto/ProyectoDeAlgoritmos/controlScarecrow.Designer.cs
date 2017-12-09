@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(controlScarecrow));
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.InicioScarecrow = new Bunifu.Framework.UI.BunifuThinButton2();
             this.seleccionScarecrow1 = new ProyectoDeAlgoritmos.seleccionScarecrow();
             this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.InicioScarecrow = new Bunifu.Framework.UI.BunifuThinButton2();
             this.SuspendLayout();
             // 
             // bunifuCustomLabel1
@@ -46,6 +46,29 @@
             this.bunifuCustomLabel1.TabIndex = 1;
             this.bunifuCustomLabel1.Text = "Scarecrow";
             this.bunifuCustomLabel1.Click += new System.EventHandler(this.bunifuCustomLabel1_Click);
+            // 
+            // seleccionScarecrow1
+            // 
+            this.seleccionScarecrow1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.seleccionScarecrow1.Location = new System.Drawing.Point(0, 0);
+            this.seleccionScarecrow1.Name = "seleccionScarecrow1";
+            this.seleccionScarecrow1.Size = new System.Drawing.Size(853, 532);
+            this.seleccionScarecrow1.TabIndex = 11;
+            this.seleccionScarecrow1.Visible = false;
+            this.seleccionScarecrow1.Load += new System.EventHandler(this.seleccionScarecrow1_Load);
+            // 
+            // bunifuCustomLabel4
+            // 
+            this.bunifuCustomLabel4.AutoSize = true;
+            this.bunifuCustomLabel4.Font = new System.Drawing.Font("Segoe UI Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.bunifuCustomLabel4.Location = new System.Drawing.Point(20, 507);
+            this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
+            this.bunifuCustomLabel4.Size = new System.Drawing.Size(794, 13);
+            this.bunifuCustomLabel4.TabIndex = 23;
+            this.bunifuCustomLabel4.Text = "Juan de Dios Bátiz, Ciudad de México,  ESCOM IPN © 2017                          " +
+    "                Alan Ernesto González Barrios  |  Joel Mauricio Romero Gamarra  " +
+    "|  René Zavala Pérez";
             // 
             // InicioScarecrow
             // 
@@ -72,29 +95,6 @@
             this.InicioScarecrow.TabIndex = 2;
             this.InicioScarecrow.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.InicioScarecrow.Click += new System.EventHandler(this.InicioScarecrow_Click);
-            // 
-            // seleccionScarecrow1
-            // 
-            this.seleccionScarecrow1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.seleccionScarecrow1.Location = new System.Drawing.Point(0, 0);
-            this.seleccionScarecrow1.Name = "seleccionScarecrow1";
-            this.seleccionScarecrow1.Size = new System.Drawing.Size(853, 532);
-            this.seleccionScarecrow1.TabIndex = 11;
-            this.seleccionScarecrow1.Visible = false;
-            this.seleccionScarecrow1.Load += new System.EventHandler(this.seleccionScarecrow1_Load);
-            // 
-            // bunifuCustomLabel4
-            // 
-            this.bunifuCustomLabel4.AutoSize = true;
-            this.bunifuCustomLabel4.Font = new System.Drawing.Font("Segoe UI Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuCustomLabel4.Location = new System.Drawing.Point(20, 507);
-            this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
-            this.bunifuCustomLabel4.Size = new System.Drawing.Size(794, 13);
-            this.bunifuCustomLabel4.TabIndex = 23;
-            this.bunifuCustomLabel4.Text = "Juan de Dios Bátiz, Ciudad de México,  ESCOM IPN © 2017                          " +
-    "                Alan Ernesto González Barrios  |  Joel Mauricio Romero Gamarra  " +
-    "|  René Zavala Pérez";
             // 
             // controlScarecrow
             // 

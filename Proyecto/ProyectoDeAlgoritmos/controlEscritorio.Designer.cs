@@ -80,9 +80,9 @@
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label4.Location = new System.Drawing.Point(263, 104);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(356, 37);
+            this.label4.Size = new System.Drawing.Size(353, 37);
             this.label4.TabIndex = 16;
-            this.label4.Text = "Analisis de Algoritmos Greedy.";
+            this.label4.Text = "Analisis de Algoritmos Greedy";
             // 
             // DesarrGre
             // 
@@ -97,8 +97,8 @@
             this.DesarrGre.Name = "DesarrGre";
             this.DesarrGre.Size = new System.Drawing.Size(526, 74);
             this.DesarrGre.TabIndex = 17;
-            this.DesarrGre.Text = "Desarrollo interactivo de algoritmos Greedy.\r\nCon problemas de Espantapajaros y S" +
-    "oldados\r\n";
+            this.DesarrGre.Text = "Desarrollo interactivo de algoritmos Greedy\r\nCon problemas de Espantapajaros y So" +
+    "ldados\r\n";
             this.DesarrGre.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox1

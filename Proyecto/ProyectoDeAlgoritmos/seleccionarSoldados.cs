@@ -24,7 +24,30 @@ namespace ProyectoDeAlgoritmos
         {
             comparacionSoldados1.Visible = false;
         }
- 
+        
+        public void VaciarPanel()
+        {
+            panelImagen1.Image = null;
+            panelImagen2.Image = null;
+            panelImagen3.Image = null;
+            panelImagen4.Image = null;
+            panelImagen5.Image = null;
+            panelImagen6.Image = null;
+            panelImagen7.Image = null;
+            panelImagen8.Image = null;
+            panelImagen9.Image = null;
+            panelImagen10.Image = null;
+            c1 = "";
+            c2 = "";
+            c3 = "";
+            c4 = "";
+            c5 = "";
+            c6 = "";
+            c7 = "";
+            c8 = "";
+            c9 = "";
+            c10 = "";
+        }
 
         private void comparacionSoldados1_Load(object sender, EventArgs e)
         {
@@ -238,7 +261,17 @@ namespace ProyectoDeAlgoritmos
         {
             comparacionSoldados1.Visible = true;
             cadena = c1 + c2 + c3 + c4 + c5 + c6 + c7 + c8 + c9 + c10;
-            MessageBox.Show("Contador: " + cadena);
+            panelImagen1.Image = null;
+            panelImagen2.Image = null;
+            panelImagen3.Image = null;
+            panelImagen4.Image = null;
+            panelImagen5.Image = null;
+            panelImagen6.Image = null;
+            panelImagen7.Image = null;
+            panelImagen8.Image = null;
+            panelImagen9.Image = null;
+            panelImagen10.Image = null;
+            comparacionSoldados1.RecibirCadena(cadena);
         }
         private void pictureSolado_MouseMove(object sender, MouseEventArgs e)
         {
