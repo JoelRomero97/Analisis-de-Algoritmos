@@ -70,7 +70,7 @@
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
             this.bunifuCustomLabel1.Size = new System.Drawing.Size(229, 32);
             this.bunifuCustomLabel1.TabIndex = 0;
-            this.bunifuCustomLabel1.Text = "Forma a los Soldados";
+            this.bunifuCustomLabel1.Text = "Forme a los Soldados";
             // 
             // panel1
             // 

@@ -143,6 +143,26 @@ namespace ProyectoDeAlgoritmos.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Maiz {
+            get {
+                object obj = ResourceManager.GetObject("Maiz", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PrimerSoladado {
+            get {
+                object obj = ResourceManager.GetObject("PrimerSoladado", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Sand1 {
             get {
                 object obj = ResourceManager.GetObject("Sand1", resourceCulture);
@@ -163,9 +183,29 @@ namespace ProyectoDeAlgoritmos.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap SandGFb {
+            get {
+                object obj = ResourceManager.GetObject("SandGFb", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Scarecrow {
             get {
                 object obj = ResourceManager.GetObject("Scarecrow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap scarecrow_576497_640 {
+            get {
+                object obj = ResourceManager.GetObject("scarecrow-576497_640", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

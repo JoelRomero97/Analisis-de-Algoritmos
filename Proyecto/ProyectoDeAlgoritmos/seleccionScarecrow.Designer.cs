@@ -68,9 +68,9 @@
             this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bunifuCustomLabel1.Location = new System.Drawing.Point(13, 18);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(176, 32);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(297, 32);
             this.bunifuCustomLabel1.TabIndex = 0;
-            this.bunifuCustomLabel1.Text = "Siembra el maíz";
+            this.bunifuCustomLabel1.Text = "Coloque la tierra a su gusto.";
             // 
             // panel1
             // 

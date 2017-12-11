@@ -23,6 +23,7 @@ namespace ProyectoDeAlgoritmos
         public void OcultarCapaComp()
         {
             comparacionSoldados1.Visible = false;
+            comparacionSoldados1.VaciarDatos();
         }
         
         public void VaciarPanel()

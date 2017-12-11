@@ -23,6 +23,7 @@ namespace ProyectoDeAlgoritmos
         public void OcultarCapaCom()
         {
             comparacionScarecrow1.Visible = false;
+            comparacionScarecrow1.VaciarDatos();
         }
 
         public void VaciarPanel()
