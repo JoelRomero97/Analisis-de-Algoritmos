@@ -228,6 +228,8 @@ namespace ProyectoDeAlgoritmos
             
             if(contadorGreedy >= tiempoGreedy)
             {
+                for (int i = 0; i < 10; i++)
+                    ConstruidaGreedy[i] = null;
                 TimerGreedySw.Stop();
             }
             else
@@ -253,6 +255,8 @@ namespace ProyectoDeAlgoritmos
         {
             if (contadorFb >= tiempoFb)
             {
+                for (int i = 0; i < 10; i++)
+                    ConstruidaFb[i] = null;
                 TimerFbSw.Stop();
             }
             else

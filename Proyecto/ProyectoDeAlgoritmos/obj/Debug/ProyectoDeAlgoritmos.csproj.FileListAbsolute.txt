@@ -35,3 +35,21 @@ C:\Users\rene\Desktop\Proyectos de C#\ProyectoDeAlgoritmos\ProyectoDeAlgoritmos\
 C:\Users\rene\Desktop\Proyectos de C#\ProyectoDeAlgoritmos\ProyectoDeAlgoritmos\obj\Debug\ProyectoDeAlgoritmos.csproj.CoreCompileInputs.cache
 C:\Users\rene\Desktop\Proyectos de C#\ProyectoDeAlgoritmos\ProyectoDeAlgoritmos\obj\Debug\ProyectoDeAlgoritmos.exe
 C:\Users\rene\Desktop\Proyectos de C#\ProyectoDeAlgoritmos\ProyectoDeAlgoritmos\obj\Debug\ProyectoDeAlgoritmos.pdb
+C:\Users\Joel_\Desktop\Proyecto\ProyectoDeAlgoritmos\bin\Debug\ProyectoDeAlgoritmos.exe.config
+C:\Users\Joel_\Desktop\Proyecto\ProyectoDeAlgoritmos\bin\Debug\ProyectoDeAlgoritmos.exe
+C:\Users\Joel_\Desktop\Proyecto\ProyectoDeAlgoritmos\bin\Debug\ProyectoDeAlgoritmos.pdb
+C:\Users\Joel_\Desktop\Proyecto\ProyectoDeAlgoritmos\bin\Debug\Control.Draggable.dll
+C:\Users\Joel_\Desktop\Proyecto\ProyectoDeAlgoritmos\obj\Debug\ProyectoDeAlgoritmos.csprojResolveAssemblyReference.cache
+C:\Users\Joel_\Desktop\Proyecto\ProyectoDeAlgoritmos\obj\Debug\ProyectoDeAlgoritmos.comparacionScarecrow.resources
+C:\Users\Joel_\Desktop\Proyecto\ProyectoDeAlgoritmos\obj\Debug\ProyectoDeAlgoritmos.comparacionSoldados.resources
+C:\Users\Joel_\Desktop\Proyecto\ProyectoDeAlgoritmos\obj\Debug\ProyectoDeAlgoritmos.controlEscritorio.resources
+C:\Users\Joel_\Desktop\Proyecto\ProyectoDeAlgoritmos\obj\Debug\ProyectoDeAlgoritmos.controlScarecrow.resources
+C:\Users\Joel_\Desktop\Proyecto\ProyectoDeAlgoritmos\obj\Debug\ProyectoDeAlgoritmos.ControlSoldados.resources
+C:\Users\Joel_\Desktop\Proyecto\ProyectoDeAlgoritmos\obj\Debug\ProyectoDeAlgoritmos.Menu.resources
+C:\Users\Joel_\Desktop\Proyecto\ProyectoDeAlgoritmos\obj\Debug\ProyectoDeAlgoritmos.Properties.Resources.resources
+C:\Users\Joel_\Desktop\Proyecto\ProyectoDeAlgoritmos\obj\Debug\ProyectoDeAlgoritmos.seleccionarSoldados.resources
+C:\Users\Joel_\Desktop\Proyecto\ProyectoDeAlgoritmos\obj\Debug\ProyectoDeAlgoritmos.seleccionScarecrow.resources
+C:\Users\Joel_\Desktop\Proyecto\ProyectoDeAlgoritmos\obj\Debug\ProyectoDeAlgoritmos.csproj.GenerateResource.Cache
+C:\Users\Joel_\Desktop\Proyecto\ProyectoDeAlgoritmos\obj\Debug\ProyectoDeAlgoritmos.csproj.CoreCompileInputs.cache
+C:\Users\Joel_\Desktop\Proyecto\ProyectoDeAlgoritmos\obj\Debug\ProyectoDeAlgoritmos.exe
+C:\Users\Joel_\Desktop\Proyecto\ProyectoDeAlgoritmos\obj\Debug\ProyectoDeAlgoritmos.pdb

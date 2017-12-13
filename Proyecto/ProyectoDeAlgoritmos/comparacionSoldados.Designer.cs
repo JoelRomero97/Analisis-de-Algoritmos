@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -36,6 +37,8 @@
             this.TiempoFB = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.TimerGreedySoldados = new System.Windows.Forms.Timer(this.components);
+            this.TimerFbSoldados = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // bunifuCustomLabel1
@@ -48,6 +51,7 @@
             this.bunifuCustomLabel1.Size = new System.Drawing.Size(470, 40);
             this.bunifuCustomLabel1.TabIndex = 0;
             this.bunifuCustomLabel1.Text = "Comparacion Greedy vs Fuerza Bruta";
+            this.bunifuCustomLabel1.Click += new System.EventHandler(this.bunifuCustomLabel1_Click);
             // 
             // panel1
             // 
@@ -88,9 +92,9 @@
             this.TiempoGreedy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.TiempoGreedy.Location = new System.Drawing.Point(44, 231);
             this.TiempoGreedy.Name = "TiempoGreedy";
-            this.TiempoGreedy.Size = new System.Drawing.Size(83, 25);
+            this.TiempoGreedy.Size = new System.Drawing.Size(93, 25);
             this.TiempoGreedy.TabIndex = 7;
-            this.TiempoGreedy.Text = "Tiempo: ";
+            this.TiempoGreedy.Text = "Tiempo: 0";
             // 
             // TiempoFB
             // 
@@ -99,9 +103,9 @@
             this.TiempoFB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.TiempoFB.Location = new System.Drawing.Point(44, 436);
             this.TiempoFB.Name = "TiempoFB";
-            this.TiempoFB.Size = new System.Drawing.Size(83, 25);
+            this.TiempoFB.Size = new System.Drawing.Size(93, 25);
             this.TiempoFB.TabIndex = 8;
-            this.TiempoFB.Text = "Tiempo: ";
+            this.TiempoFB.Text = "Tiempo: 0";
             // 
             // panel2
             // 
@@ -123,6 +127,16 @@
             this.bunifuCustomLabel4.Text = "Juan de Dios Bátiz, Ciudad de México,  ESCOM IPN © 2017                          " +
     "                Alan Ernesto González Barrios  |  Joel Mauricio Romero Gamarra  " +
     "|  René Zavala Pérez";
+            // 
+            // TimerGreedySoldados
+            // 
+            this.TimerGreedySoldados.Interval = 1000;
+            this.TimerGreedySoldados.Tick += new System.EventHandler(this.TimerGreedySoldados_Tick);
+            // 
+            // TimerFbSoldados
+            // 
+            this.TimerFbSoldados.Interval = 1000;
+            this.TimerFbSoldados.Tick += new System.EventHandler(this.TimerFbSoldados_Tick);
             // 
             // comparacionSoldados
             // 
@@ -155,5 +169,7 @@
         private Bunifu.Framework.UI.BunifuCustomLabel TiempoFB;
         private System.Windows.Forms.Panel panel2;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel4;
+        private System.Windows.Forms.Timer TimerGreedySoldados;
+        private System.Windows.Forms.Timer TimerFbSoldados;
     }
 }

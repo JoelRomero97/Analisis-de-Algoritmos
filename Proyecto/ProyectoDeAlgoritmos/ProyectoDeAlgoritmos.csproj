@@ -194,9 +194,6 @@
     <None Include="Resources\Maiz1.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Sand11.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\SandGFb.png" />
   </ItemGroup>
   <ItemGroup>

@@ -63,6 +63,15 @@ namespace ProyectoDeAlgoritmos
             panelImagen18.AllowDrop = true;
             panelImagen19.AllowDrop = true;
             panelImagen20.AllowDrop = true;
+            panelImagen12.Enabled = false;
+            panelImagen13.Enabled = false;
+            panelImagen14.Enabled = false;
+            panelImagen15.Enabled = false;
+            panelImagen16.Enabled = false;
+            panelImagen17.Enabled = false;
+            panelImagen18.Enabled = false;
+            panelImagen19.Enabled = false;
+            panelImagen20.Enabled = false;
         }
 
         private void comparacionScarecrow1_Load(object sender, EventArgs e)
@@ -133,21 +142,27 @@ namespace ProyectoDeAlgoritmos
         private void panelImagen11_DragDrop(object sender, DragEventArgs e)
         {
             Objeto_Insertado(sender, e, 11);
+            panelImagen12.Enabled = true;
+
         }
 
         private void panelImagen12_DragDrop(object sender, DragEventArgs e)
         {
             Objeto_Insertado(sender, e, 12);
+            panelImagen13.Enabled = true;
+
         }
 
         private void panelImagen13_DragDrop(object sender, DragEventArgs e)
         {
             Objeto_Insertado(sender, e, 13);
+            panelImagen14.Enabled = true;
         }
 
         private void panelImagen14_DragDrop(object sender, DragEventArgs e)
         {
             Objeto_Insertado(sender, e, 14);
+            panelImagen15.Enabled = true;
         }
 
 
@@ -219,31 +234,39 @@ namespace ProyectoDeAlgoritmos
         private void panelImagen15_DragDrop(object sender, DragEventArgs e)
         {
             Objeto_Insertado(sender, e, 15);
+            panelImagen16.Enabled = true;
+
         }
 
         private void panelImagen16_DragDrop(object sender, DragEventArgs e)
         {
             Objeto_Insertado(sender, e, 16);
+            panelImagen17.Enabled = true;
+
         }
 
         private void panelImagen17_DragDrop(object sender, DragEventArgs e)
         {
             Objeto_Insertado(sender, e, 17);
+            panelImagen18.Enabled = true;
         }
 
         private void panelImagen18_DragDrop(object sender, DragEventArgs e)
         {
             Objeto_Insertado(sender, e, 18);
+            panelImagen19.Enabled = true;
         }
 
         private void panelImagen19_DragDrop(object sender, DragEventArgs e)
         {
             Objeto_Insertado(sender, e, 19);
+            panelImagen20.Enabled = true;
+
         }
 
         private void panelImagen20_DragDrop(object sender, DragEventArgs e)
         {
-            Objeto_Insertado(sender, e, 20);  
+            Objeto_Insertado(sender, e, 20);
         }
         public void Objeto_Insertado (object sender, DragEventArgs e, int numPanel)
         {
